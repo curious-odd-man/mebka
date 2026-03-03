@@ -28,7 +28,7 @@ export function setupOrder(itemData) {
     });
     FIELDS.push((messageLines) => {
         if (termsOfUseCheckbox.checked) {
-            messageLines.push("<br>Es izlasiju, sapratu un pieņemu lietošanas noteikumus un privātuma politiku.");
+            messageLines.push("<br>Es izlasīju, sapratu un pieņemu lietošanas noteikumus un privātuma politiku.");
         }
     });
     FIELDS.push((messageLines) => {
