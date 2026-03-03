@@ -1,1 +1,1 @@
-[www.mebka.lv](www.mebka.lv)
+[www.mebka.lv](http://www.mebka.lv)
