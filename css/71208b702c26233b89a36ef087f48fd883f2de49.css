@@ -93,6 +93,7 @@ a {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    background-color: white;
 }
 
 .open-modal-image {
@@ -184,4 +185,8 @@ ol.multilevel-numbering {
 li.multilevel-numbering::before {
     counter-increment: section;
     content: counters(section, ".") ". "
+}
+
+.tool-complexity-img {
+    height: 7em;
 }

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        MebKa
+    </title>
+    <link rel="icon" type="image/x-icon" href="img/0b4deb6b0532fe127128162033b05b399cee4e70.svg">
+    <script src="js/bootstrap.bundle.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/71208b702c26233b89a36ef087f48fd883f2de49.css" rel="stylesheet">
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('consent', 'default', {
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied',
+            'wait_for_update': 500,
+        });
+        gtag('js', new Date());
+        gtag('config', 'G-34FBY4QDE6');
+    </script>
+</head>
+<body class="back-gradient">
+<header class="sticky-top">
+    <div class="grey-background navbar navbar-expand-lg bd-navbar">
+        <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/50eddd400c36b5f6750b13c08bf8a2e0cb865444.svg" alt="MebKa logo" width="100" height="100%">
+            </a>
+            <ol class="breadcrumb navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                
+            </ol>
+            <div class="ms-auto mb-2 me-auto mb-lg-0 text-center">
+                <a href="pages/77f9e615d67b37c18aa7808ae8fbc500e78230c2.html">
+                    <svg width="15em" height="100%" viewBox="0 0 440 115">
+                        <use xlink:href="../../../../../../../repository/branding/promo-icon.svg"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="ms-auto mb-2 mb-lg-0 text-center">
+                <div class="text-secondary pb-1">
+                    <svg width="1.3em" height="100%" viewBox="0 0 16 16">
+                        <use xlink:href="img/393ca559c20292fc9bbb7469492b6c53ebaf75c8.svg"/>
+                    </svg>
+                    <a href="tel:+371 28263953" class="a-hoverable">
+                        +371 28263953
+                    </a>
+                </div>
+                <div class="text-secondary">
+                    <svg width="1.3em" height="100%" viewBox="0 0 16 16">
+                        <use xlink:href="img/46f4e14743f58b64e3880eee0170de92a50cac6a.svg"/>
+                    </svg>
+                    <a href="mailto:mebka@mebka.lv" class="a-hoverable">
+                        mebka@mebka.lv
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- ========================================================================================== -->
+<!-- ============================= Questionary ================================================ -->
+<!-- ========================================================================================== -->
+<section id='questionary' class="back">
+    <div class="container display-5 mt-4 mb-4">
+        Pasūtījuma sagatavošana: <span id='item-name-span' class="text-primary"></span>
+    </div>
+    <div class="container mt-4 mb-4">
+        <img id="dimensions-img">
+    </div>
+    <div class="container display-5 mt-4 mb-4">
+        Kādu izmēru Jūs vēlaties?
+        <div class="row mt-2 mb-2">
+            <div class="col">
+                <select id='dimensions-select' class="form-select" aria-label="Izvēlēties izmēru">
+                </select>
+            </div>
+        </div>
+        <div id="custom-dimensions-section-row" class="row mt-2 mb-2" hidden="hidden">
+            <div id='custom-dimensions-section-col' class="col">
+                <span class="display-6 mb-3">Ievadiet jūsu izmērus</span>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4 mb-4">
+        <span class="display-5">Kādi materiāli tiks izmantoti?</span>
+        <div class="row mt-2">
+            <span class="fs-5">Izvēlējieties detaļu ražotāju no saraksta, vai norādiet savu.</span>
+            <div class="input-group mb-2">
+                <span class="input-group-text">Ražotājs</span>
+                <select id="factory-select" class="form-select">
+                    <option selected></option>
+                    <option value="attelsr">AttelsR</option>
+                    <option value="amf">AM Furnitūra</option>
+                    <option value="custom">Cits</option>
+                </select>
+            </div>
+            <div id="factory-custom-input-section" class="input-group mb-2" hidden="hidden">
+                <span class="input-group-text">Informācija par ražotāju: </span>
+                <input id="factory-custom-input" class="form-control">
+            </div>
+        </div>
+        <div class="row mt-2">
+            <template id="template-additional-question-checkbox">
+                <div class="mt-2 border-top border-bottom border-secondary-subtle">
+                    <div class="mt-2 form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="checkbox">
+                        <label class="form-check-label" for="checkbox" id="checkbox-label"></label>
+                    </div>
+                    <div id="elaboration" class="font-085 mb-2"></div>
+                </div>
+            </template>
+        </div>
+        <div class="row mt-2">
+            <span class="fs-5">Norādiet materiālus</span>
+            <p>
+                Šeit norādiet no kādiem materiāliem Jūs vēlaties izgatavot mēbeles.
+            </p>
+            <ol>
+                <li>Norādiet materiāla ražotāja kodu (artikulu)</li>
+                <li>Norādiet kādam detaļām šis materiāls ir jāizmanto</li>
+                <li>Varat norādīt vairākus dažādus materiālus, pievienojot jaunas rindas</li>
+            </ol>
+
+            <div class="col" id="materials-section">
+                <table id='materials-table' class="table table-bordered table-responsive">
+                    <thead>
+                    <tr class="text-center">
+                        <th scope="col">#</th>
+                        <th scope="col">Materiāla artikuls</th>
+                        <th scope="col">Materiāla biezums</th>
+                        <th scope="col">Detaļu apraksts</th>
+                        <th scope="col">
+                            <svg width="32px" height="32px">
+                                <use xlink:href="img/d8bbf81cb46fa8277eaa25fbd6607f7649b0549c.svg"/>
+                            </svg>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <template id="template-delete-material-row">
+                    <button class="btn text-danger">
+                        <svg width="32px" height="32px">
+                            <use xlink:href="img/6e6a522562ef429ed195362569cc211dc01e41b6.svg"/>
+                        </svg>
+                    </button>
+                </template>
+                <template id="template-material-row">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>
+                            <input type="text" class="form-control" name="material-id">
+                        </td>
+                        <td>
+                            <input class="form-control" disabled>
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" name="description">
+                        </td>
+                        <td></td>
+                    </tr>
+                </template>
+            </div>
+            <button id='add-material-button' class="btn btn-success">
+                <svg width="32px" height="32px">
+                    <use xlink:href="img/8dc08d26e17b369fe26f2e89f67062d2f88cdccc.svg"/>
+                </svg>
+                Pievienot materiālu
+            </button>
+        </div>
+    </div>
+    <div class="container mt-4 mb-4">
+        <button id="additional-changes-button" class="btn btn-primary btn-lg">
+            <svg width="32px" height="32px">
+                <use xlink:href="img/67e7e75d4ebeedf5e510a915cd70856339b8a708.svg"/>
+            </svg>
+            Vēlos papildus izmaiņas!
+        </button>
+        <div id='additional-changes-section' hidden="hidden">
+            <div class="row">
+                <div class="col">
+                    <span class="display-6">Ievadiet papildus izmaiņas, ko Jūs vēlaties!</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <textarea id='additional-changes-textarea' class="form-control"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4 mb-4">
+        <button id="additional-comments-button" class="btn btn-primary  btn-lg">
+            <svg width="32px" height="32px">
+                <use xlink:href="img/49779046010d58031c5e3dbcce4389c4d073af9f.svg"/>
+            </svg>
+            Vēlos pievienot komentāru
+        </button>
+        <div id='additional-comments-section' hidden="hidden">
+            <div class="row">
+                <div class="col">
+                    <span class="display-6">Ievadiet papildus komentārus...</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <textarea id='additional-comments-textarea' class="form-control"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='contact-info-section' class="container mt-4 mb-4">
+        <div class="mb-3">
+            <span class="display-6">Saziņas dati</span>
+        </div>
+        <div class="input-group mb-3">
+            <span id='person-name-input-label' class="input-group-text">Vārds, Uzvārds</span>
+            <input id='person-name-input' type="text" aria-labelledby="person-name-input-label"
+                   class="form-control">
+        </div>
+        <div class="input-group mb-3">
+            <span id='contact-phone-number-label' class="input-group-text">Tālruņa numurs: </span>
+            <input id='contact-phone-number' type="text" aria-labelledby="contact-phone-number-label"
+                   class="form-control">
+        </div>
+        <div class="input-group mb-3">
+            <span id='contact-email-label' class="input-group-text">E-pasts: </span>
+            <input id='contact-email' type="text" aria-labelledby="contact-email-label" class="form-control">
+        </div>
+    </div>
+    <div class="container mt-4 mb-4">
+        <button id="delivery-button" class="btn btn-primary  btn-lg">
+            <svg width="32px" height="32px">
+                <use xlink:href="img/07dac46bb46ded55b2fd02ecc6a3ac9b852e0aa2.svg"/>
+            </svg>
+            Vēlos piegādi
+        </button>
+        <div id='delivery-section' hidden="hidden">
+            <div class="mb-3">
+                <span class="display-6">Adrese</span>
+            </div>
+            <div class="mb-3">
+                <div class="input-group">
+                    <span class="input-group-text">Adrese</span>
+                    <input id='address-input' type="text" class="form-control" aria-labelledby="country-city-label"
+                           autocomplete="off">
+                </div>
+                <div id="address-dropdown">
+                    <ul id="address-dropdown-options-list" class="dropdown-menu show">
+                        <li id="address-dropdown-loading-indicator" class="spinner-border text-primary ms-5rem">
+                            <span class="visually-hidden">Meklēt...</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-2">
+        <div class="row">
+            <div class="col bg-warning-subtle rounded-3 pt-2 pb-2 mb-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="termsOfUseAcceptedCheckbox">
+                    <label class="form-check-label" for="termsOfUseAcceptedCheckbox">
+                        Iepazinos un piekrītu <a href="pages/1e198b574c2a2092072b7ff4deb34b7fdab2d807.html" target="_blank">lietošanas noteikumiem</a> un <a href="pages/9078cb9bf8dc12b0ae88f1fd2c1af0ac9584f063.html" target="_blank">privātuma
+                        politikai</a>
+                    </label>
+                    <div class="invalid-feedback">
+                        Lūdzam izlasīt <a href="pages/1e198b574c2a2092072b7ff4deb34b7fdab2d807.html" target="_blank">lietošanas noteikumus</a> un <a href="pages/9078cb9bf8dc12b0ae88f1fd2c1af0ac9584f063.html" target="_blank">privātuma
+                        politiku</a> un pieņemt tos atzimējot ķeksīti augšā.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id='ready' class="btn btn-success btn-lg">
+            <svg width="32px" height="32px">
+                <use xlink:href="img/559012af4c306bd42bac0e563766d5234bcb69f8.svg"/>
+            </svg>
+            Nosūtīt!
+        </button>
+    </div>
+</section>
+<!-- ========================================================================================== -->
+<!-- ============================= Generated ================================================ -->
+<!-- ========================================================================================== -->
+<section id='generated' class="back" hidden="hidden">
+    <div class="display-4 container text-danger">
+        Pārbaudiet tekstu un iesūtiet to uz <a id='mailto-link' href="mailto:test@email.com">test@email.com</a>
+    </div>
+    <div class="container mt-4 mb-4">
+        <div class="row mb-4">
+            <div class="col col-auto">
+                <span class="display-6">Ziņojuma teksts</span>
+            </div>
+            <div class="col">
+                <button id='copy-to-clipboard' class="btn btn-success  btn-lg">
+                    <svg width="32px" height="32px">
+                        <use xlink:href="img/bd4532e7d08885ce57573e63536faa472bd75116.svg"/>
+                    </svg>
+                    <span id='copy-to-clipboard-text'>Iekopēt starpliktuvē</span>
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div id='mail-contents'
+                 class="col col-auto rounded rounded-5 border border-5 border-success-subtle ps-5 pe-5 pt-3 pb-3 fs-4 fst-italic">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4 mb-4">
+        <button id='edit' class="btn btn-warning btn-lg">Rediģēt!</button>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row border-top my-4 py-3 align-items-center justify-content-around">
+            <div class="col text-secondary">
+                Autors: Vladislavs Varslavāns
+            </div>
+            <div class="col text-end text-secondary">
+                Lapa atjaunota:
+                <time>2026-02-28</time>
+            </div>
+        </div>
+    </div>
+    <div class="border-top grey-background w-100">
+        <div class="container">
+            <div class="row p-2">
+                <div class="col col-auto">
+                    <a class="a-hoverable" href="pages/71b9bbf67ae2c42dd8afc9bd14e6a169cbe77491.html">Par Mums</a>
+                </div>
+                <div class="col"></div>
+                <div class="col col-auto">
+                    <a class="a-hoverable" href="pages/c25eff276332e29b858d50e67e135979d6dde488.html">Pasūtījuma process</a>
+                </div>
+                <div class="col"></div>
+                <div class="col col-auto">
+                    <a class="a-hoverable" href="pages/03c1f1e311d6b7420124a4175a67f3d1a66f9ec9.html">BUJ</a>
+                </div>
+                <div class="col"></div>
+                <div class="col col-auto">
+                    <a class="a-hoverable" href="pages/1e198b574c2a2092072b7ff4deb34b7fdab2d807.html">Lietošanas noteikumi</a>
+                </div>
+                <div class="col"></div>
+                <div class="col col-auto">
+                    <a class="a-hoverable" href="pages/9078cb9bf8dc12b0ae88f1fd2c1af0ac9584f063.html">Privātuma politika</a>
+                </div>
+                <div class="col"></div>
+                <div class="col col-auto">
+                    <a class="a-hoverable" href="pages/403af372c02874a954c35db3cd492d09c042883a.html">Preču atgriešana</a>
+                </div>
+                <div class="col"></div>
+                <div class="col col-auto">
+                    <a class="a-hoverable" href="pages/61f9892efac9a2897e0873397622830e19526fa0.html">Sīkdatņu politika</a>
+                </div>
+                <div class="col"></div>
+                <div class="col col-auto">
+                    <a role="button" class="a-hoverable" data-bs-toggle="offcanvas"
+                       data-bs-target="#gtag-cookies-consent-offcanvas">Sīkdatņu iestatījumi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<section id="gtag-cookies-consent-section">
+    <div id="gtag-cookies-consent-offcanvas" class="offcanvas offcanvas-bottom h-auto" data-bs-backdrop="static"
+         data-bs-scroll="true" tabindex="-1">
+        <div class="offcanvas-body">
+            <div class="container row-gap-3" id="offcanvas-body-container">
+                <div class="row mb-3">
+                    <div class="col">
+                        <h2>Mēs novērtējam Jūsu privātumu</h2>
+                        <p class="fs-5">
+                            Mēs izmantojam sīkdatnes un citas tehnoloģijas, lai personalizētu Jūsu pieredzi, veiktu
+                            mārketingu un apkopotu analītikas datus. Uzziniet vairāk mūsu <a
+                                href="pages/9078cb9bf8dc12b0ae88f1fd2c1af0ac9584f063.html">"Privātuma politika"</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <button id='configure-cookies-button' class="btn btn-outline-secondary w-100">Personalizēt
+                            sīkdatņu izmantošanu
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button id='deny-all-cookies-button' data-bs-dismiss="offcanvas"
+                                class="btn btn-outline-danger w-100">Nē, paldies!
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button id='accept-all-cookies-button' data-bs-dismiss="offcanvas"
+                                class="btn btn-success w-100">Pieņemt visas sīkdatnes
+                        </button>
+                    </div>
+                </div>
+                <div class="row mb-3 visually-hidden">
+                    <div class="col">
+                        <button id='save-user-preferences' class="btn btn-primary" data-bs-dismiss="offcanvas">
+                            Saglabāt manus iestatījumus.
+                        </button>
+                    </div>
+                </div>
+                <div class="row mb-3 visually-hidden">
+                    <div class="col">
+                        <div class="form-check">
+                            <input id="cookies-consent-mandatory-checkbox" type="checkbox" class="form-check-input"
+                                   checked
+                                   disabled>
+                            <label class="form-check-label" for="cookies-consent-mandatory-checkbox">
+                                <b>Nepieciešamās</b>
+                            </label>
+                        </div>
+                        Šīs sīkdatnes ir nepieciešamas, lai nodrošinātu vietnes pilnvērtīgu darbību.
+                    </div>
+                </div>
+                <div class="row mb-3 visually-hidden">
+                    <div class="col">
+                        <div class="form-check">
+                            <input id="cookies-consent-personalization-checkbox" type="checkbox"
+                                   class="form-check-input">
+                            <label class="form-check-label" for="cookies-consent-personalization-checkbox">
+                                <b>Personalizācija</b>
+                            </label>
+                        </div>
+                        Šīs sīkdatnes saglabā informāciju par Jūsu darbībām, lai pielāgotu nākamo apmeklējumu vietnē.
+                    </div>
+                </div>
+                <div class="row mb-3 visually-hidden">
+                    <div class="col">
+                        <div class="form-check">
+                            <input id="cookies-consent-analytics-checkbox" type="checkbox" class="form-check-input">
+                            <label class="form-check-label" for="cookies-consent-analytics-checkbox">
+                                <b>Analītika</b>
+                            </label>
+                        </div>
+                        Šīs sīkdatnes palīdz mums saprast, kā Jūs mijiedarbojaties ar vietni. Mēs izmantojam šos datus,
+                        lai identificētu uzlabojamās vietas.
+                    </div>
+                </div>
+                <div class="row mb-3 visually-hidden">
+                    <div class="col">
+                        <div class="form-check">
+                            <input id="cookies-consent-marketing-checkbox" type="checkbox" class="form-check-input">
+                            <label class="form-check-label" for="cookies-consent-marketing-checkbox">
+                                <b>Mārketings</b>
+                            </label>
+                        </div>
+                        Šīs sīkdatnes tiek izmantotas, lai optimizētu mārketinga komunikāciju un rādītu Jums pielāgotas
+                        reklāmas citās vietnēs.
+                    </div>
+                </div>
+                <div class="row mb-3 visually-hidden">
+                    <div class="col">
+                        <div class="form-check">
+                            <input id="cookies-consent-marketing-user-data-checkbox" type="checkbox"
+                                   class="form-check-input">
+                            <label class="form-check-label" for="cookies-consent-marketing-user-data-checkbox">
+                                <b>Mārketings - Lietotāja dati</b>
+                            </label>
+                        </div>
+                        Šīs sīkdatnes tiek izmantotas, lai optimizētu mārketinga komunikāciju un rādītu Jums pielāgotas
+                        reklāmas citās vietnēs.
+                    </div>
+                </div>
+                <div class="row mb-3 visually-hidden">
+                    <div class="col">
+                        <div class="form-check">
+                            <input id="cookies-consent-marketing-personalization-checkbox" type="checkbox"
+                                   class="form-check-input">
+                            <label class="form-check-label" for="cookies-consent-marketing-personalization-checkbox">
+                                <b>Mārketings - Reklāmas personalizācija</b>
+                            </label>
+                        </div>
+                        Šīs sīkdatnes tiek izmantotas, lai optimizētu mārketinga komunikāciju un rādītu Jums pielāgotas
+                        reklāmas citās vietnēs.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    class ConsentConfig {
+        constructor(ad_user_data, ad_personalization, ad_storage, analytics_storage, personalization) {
+            this.ad_user_data = ad_user_data;
+            this.ad_personalization = ad_personalization;
+            this.ad_storage = ad_storage;
+            this.analytics_storage = analytics_storage;
+            this.personalization = personalization;
+        }
+    }
+
+    function setupConsent(consentConfig) {
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        localStorage.setItem(CONSENT_STORAGE_KEY, JSON.stringify(consentConfig));
+        console.log("Setting Cookies: " + JSON.stringify(consentConfig))
+
+        gtag('consent', 'update', {
+            ad_user_data: consentConfig.ad_user_data || 'denied',
+            ad_personalization: consentConfig.ad_personalization || 'denied',
+            ad_storage: consentConfig.ad_storage || 'denied',
+            analytics_storage: consentConfig.analytics_storage || 'denied'
+        });
+
+        const gtagScript = document.createElement('script');
+        gtagScript.async = true;
+        gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-34FBY4QDE6';
+
+        const firstScript = document.getElementsByTagName('script')[0];
+        firstScript.parentNode.insertBefore(gtagScript, firstScript);
+
+        document.getElementById('cookies-consent-analytics-checkbox').checked = consentConfig.analytics_storage === 'granted';
+        document.getElementById('cookies-consent-marketing-checkbox').checked = consentConfig.ad_storage === 'granted';
+        document.getElementById('cookies-consent-marketing-user-data-checkbox').checked = consentConfig.ad_user_data === 'granted';
+        document.getElementById('cookies-consent-marketing-personalization-checkbox').checked = consentConfig.ad_personalization === 'granted';
+        document.getElementById("cookies-consent-personalization-checkbox").checked = consentConfig.personalization === 'granted';
+    }
+
+    const CONSENT_STORAGE_KEY = "consentSet";
+    const consentConfigString = localStorage.getItem(CONSENT_STORAGE_KEY);
+    const consentPopupClassList = document.getElementById("gtag-cookies-consent-offcanvas").classList;
+
+    if (consentConfigString) {
+        setupConsent(JSON.parse(consentConfigString));
+    } else {
+        consentPopupClassList.add("show");
+    }
+
+    document.getElementById('accept-all-cookies-button').addEventListener('click', event => {
+        const consentConfigGranted = new ConsentConfig('granted', 'granted', 'granted', 'granted', 'granted');
+        setupConsent(consentConfigGranted);
+    });
+
+    document.getElementById('deny-all-cookies-button').addEventListener('click', event => {
+        const consentConfigDenied = new ConsentConfig('denied', 'denied', 'denied', 'denied', 'denied');
+        setupConsent(consentConfigDenied);
+    });
+
+    document.getElementById('configure-cookies-button').addEventListener('click', event => {
+        const container = document.getElementById('offcanvas-body-container');
+        for (let child of container.children) {
+            child.classList.remove("visually-hidden");
+        }
+    });
+
+    document.getElementById('save-user-preferences').addEventListener('click', event => {
+        const personalization = document.getElementById("cookies-consent-personalization-checkbox").checked;
+        const analytics = document.getElementById('cookies-consent-analytics-checkbox').checked;
+        const marketing = document.getElementById('cookies-consent-marketing-checkbox').checked;
+        const marketingUserData = document.getElementById('cookies-consent-marketing-user-data-checkbox').checked;
+        const marketingPersonalization = document.getElementById('cookies-consent-marketing-personalization-checkbox').checked;
+        const consentConfigUser = new ConsentConfig(
+                marketingUserData ? 'granted' : 'denied',
+                marketingPersonalization ? 'granted' : 'denied',
+                marketing ? 'granted' : 'denied',
+                analytics ? 'granted' : 'denied',
+                personalization ? 'granted' : 'denied'
+        );
+        setupConsent(consentConfigUser);
+    });
+</script>
+</body>
+<script type="module">
+    import {itemData} from './js/689c81eeef218fc5e80c8f6bd921d1a544cc780f.js';
+    import {setupOrder} from './js/ff60effb3cb84b502207f39fd335ebc0223f07e1.js';
+
+    setupOrder(itemData);
+</script>
+</html>

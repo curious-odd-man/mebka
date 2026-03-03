@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="865"
+   height="484"
+   viewBox="0 0 228.86459 128.05834"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="order-process.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   inkscape:export-filename="order-process.png"
+   inkscape:export-xdpi="150"
+   inkscape:export-ydpi="150"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showguides="false"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="393.15136"
+     inkscape:cy="250.66935"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1">
+    <sodipodi:guide
+       position="66.446684,274.03131"
+       orientation="0,-1"
+       id="guide3"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect61"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect60"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,1,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <marker
+       style="overflow:visible"
+       id="marker47"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow tail"
+       markerWidth="2.0009999"
+       markerHeight="2.0009999"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid"
+       markerUnits="userSpaceOnUse">
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M -0.33043975,-3 2.7797858,0 -0.33043975,3 M -3.3304398,-3 -0.33043975,0 -3.3304398,3 m -3.0000001,0 3.0000001,-3 -3.0000001,-3"
+         sodipodi:nodetypes="ccccccccc"
+         id="path47" />
+    </marker>
+    <pattern
+       id="EMFhbasepattern"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <pattern
+       id="EMFhbasepattern-4"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+    <pattern
+       id="EMFhbasepattern-3"
+       patternUnits="userSpaceOnUse"
+       width="6"
+       height="6"
+       x="0"
+       y="0" />
+  </defs>
+  <g
+     id="g4"
+     inkscape:label="1"
+     transform="matrix(0.26458333,0,0,0.26458333,-20.974325,4.245367)">
+    <rect
+       x="132.69344"
+       y="18.36396"
+       width="120"
+       height="80"
+       rx="12"
+       ry="12"
+       fill="#d5e8d4"
+       stroke="#82b366"
+       pointer-events="all"
+       id="rect3"
+       style="stroke:#82b366;stroke-opacity:1"
+       inkscape:export-filename="order-process.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <text
+       x="192.55281"
+       y="53.896187"
+       fill="light-dark(#000000, #ffffff)"
+       font-family="Helvetica"
+       font-size="12px"
+       text-anchor="middle"
+       id="text4"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         x="192.55281"
+         y="53.896187"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Klients izvēlas</tspan><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         x="192.55281"
+         y="68.896187"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">mēbeles no kataloga</tspan></text>
+    <g
+       data-cell-id="yuITEQSPYBazJoX66-pm-25"
+       id="g42-1"
+       inkscape:label="reading"
+       transform="matrix(0.63201586,0,0,0.63201586,190.3025,-17.846727)">
+      <path
+         d="m 71.08,51.46 -26.02,-4.23 3.73,-2.64 6.25,0.87 6.24,-0.87 z"
+         fill="#000000"
+         stroke="none"
+         pointer-events="all"
+         id="path33" />
+      <path
+         d="m 55.04,2.85 c 5.22,0 9.45,4.18 9.45,9.34 0,5.16 -3.32,9.34 -9.45,9.34 -5.21,0 -9.45,-4.18 -9.45,-9.34 -0.01,-5.15 4.23,-9.34 9.45,-9.34 z"
+         fill="#000000"
+         stroke="none"
+         pointer-events="all"
+         id="path34" />
+      <path
+         d="m 57.4,70.34 v 22.57 c 0,2.81 2.31,5.09 5.15,5.09 2.85,0 5.16,-2.28 5.16,-5.09 V 70.34 c 0,-2.81 -2.31,-5.1 -5.16,-5.1 -2.84,0 -5.15,2.29 -5.15,5.1 z"
+         fill="#000000"
+         stroke="none"
+         pointer-events="all"
+         id="path35" />
+      <path
+         d="m 89,83.22 c 0,1.64 -1.35,2.96 -3,2.96 H 70.18 V 71.41 h 6.85 V 56.64 c 0,-1.63 1.34,-2.96 2.98,-2.96 H 86 c 1.65,0 3,1.33 3,2.96 z"
+         fill="#000000"
+         stroke="none"
+         pointer-events="all"
+         id="path36" />
+      <path
+         d="M 54.93,86.18 H 24.2 c -1.65,0 -2.99,-1.32 -2.99,-2.96 V 56.64 c 0,-1.63 1.34,-2.96 2.99,-2.96 h 6 c 1.64,0 2.99,1.33 2.99,2.96 v 14.77 h 21.74 z"
+         fill="#000000"
+         stroke="none"
+         pointer-events="all"
+         id="path37-8" />
+      <path
+         d="m 38.75,54.3 c -0.47,2.77 1.43,5.4 4.25,5.86 l 22.54,3.66 c 2.81,0.45 5.47,-1.42 5.93,-4.2 0.47,-2.77 -1.44,-5.4 -4.25,-5.86 L 44.68,50.1 c -2.81,-0.45 -5.47,1.42 -5.93,4.2 z"
+         fill="#000000"
+         stroke="none"
+         pointer-events="all"
+         id="path38-5" />
+      <path
+         d="M 55.04,28.96 67.3,26.99 v 8.51 c 1.95,1.45 6.05,4.49 6.05,4.49 0.58,0.58 0.34,1.24 0.2,1.43 -0.34,0.45 -0.99,0.55 -1.44,0.21 l -7.64,-5.7 c -1.59,-1.1 -3.77,-0.72 -4.89,0.83 -1.12,1.57 -0.74,3.73 0.84,4.83 l 13.05,9.05 c 0.6,0.43 1.46,0.71 2.33,0.71 v 0 c 0.73,0 1.59,-0.29 2.23,-0.75 1.37,-0.96 1.87,-2.67 1.41,-4.23 L 74.6,32.22 c -1.29,-3.5 -4.56,-7.65 -9.46,-7.65 h -20.2 c -4.9,0 -8.17,4.14 -9.46,7.65 l -4.84,14.15 c -0.46,1.56 0.04,3.27 1.41,4.23 0.64,0.45 1.5,0.75 2.23,0.75 v 0 c 0.87,0 1.73,-0.28 2.33,-0.71 l 13.05,-9.05 c 1.58,-1.1 1.95,-3.26 0.84,-4.83 -1.12,-1.56 -3.3,-1.93 -4.88,-0.83 l -7.64,5.7 c -0.45,0.34 -1.09,0.25 -1.44,-0.21 -0.13,-0.19 -0.37,-0.84 0.21,-1.43 0,0 4.1,-3.04 6.05,-4.49 v -8.51 z"
+         fill="#000000"
+         stroke="none"
+         pointer-events="all"
+         id="path41" />
+    </g>
+  </g>
+  <path
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#83b368;stroke-width:4.0252;stroke-miterlimit:4.4;stroke-dasharray:4.0252, 4.0252;stroke-dashoffset:0;stroke-opacity:1;marker-mid:url(#marker47)"
+     d="m -38.041588,107.38451 h 95.45534 211.429008 203.64635 213.54583 c 0,0 50.86397,-0.72767 84.14653,0 57.73326,1.26225 57.74149,172.43982 0,173.24116 -53.77936,0.74636 -84.14653,0 -84.14653,0 H 472.48911 268.84276 57.413752 c 0,0 -9.30836,-0.0803 -61.5142143,0 -57.7469867,0.0889 -57.7417497,172.45844 0,173.24117 20.0710683,0.27208 61.5142143,0 61.5142143,0 h 98.291928"
+     id="path46"
+     sodipodi:nodetypes="cccccsscccccccc"
+     inkscape:path-effect="#path-effect61"
+     inkscape:original-d="m -38.041588,107.38451 h 95.45534 211.429008 203.64635 213.54583 c 0,0 50.86397,-0.72767 84.14653,0 57.73326,1.26225 57.74149,172.43982 0,173.24116 -53.77936,0.74636 -84.14653,0 -84.14653,0 H 472.48911 268.84276 57.413752 c 0,0 -9.30836,-0.0803 -61.5142143,0 -57.7469867,0.0889 -57.7417497,172.45844 0,173.24117 20.0710683,0.27208 61.5142143,0 61.5142143,0 h 98.291928"
+     transform="matrix(0.26458333,0,0,0.26458333,13.075814,5.929165)" />
+  <g
+     id="g10"
+     inkscape:label="2"
+     transform="matrix(0.26458333,0,0,0.26458333,13.939085,5.083247)">
+    <rect
+       x="204"
+       y="12"
+       width="120"
+       height="80"
+       rx="12"
+       ry="12"
+       fill="#d5e8d4"
+       stroke="#82b366"
+       pointer-events="all"
+       id="rect9" />
+    <text
+       x="263.67188"
+       y="40.319336"
+       fill="light-dark(#000000, #ffffff)"
+       font-family="Helvetica"
+       font-size="12px"
+       text-anchor="middle"
+       id="text10"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+         sodipodi:role="line"
+         id="tspan6"
+         x="263.67188"
+         y="40.319336">Klients izvēlas</tspan><tspan
+         sodipodi:role="line"
+         id="tspan7"
+         x="263.67188"
+         y="55.319336">materiālus</tspan><tspan
+         sodipodi:role="line"
+         x="263.67188"
+         y="70.319336"
+         id="tspan8">pie ražotāja</tspan></text>
+    <g
+       data-cell-id="yuITEQSPYBazJoX66-pm-28"
+       id="g32-5"
+       transform="matrix(0.46460887,0,0,0.46460887,277.83751,-15.995758)"
+       inkscape:label="materials"
+       style="stroke-width:2.15235">
+      <g
+         id="g39"
+         inkscape:label="person"
+         transform="translate(14.849243)"
+         style="stroke-width:2.15235">
+        <path
+           d="m 32.82,37.91 -1.7,-0.74 c -3,-1.33 -4.65,-1.9 -5.32,-2.19 -0.12,-0.05 -0.7,-0.36 -0.98,-0.96 -0.79,-1.73 -4.15,-10.05 -4.89,-11.89 -0.64,-1.56 -2.21,-3.77 -5.44,-4.55 -3.67,-0.9 -7.38,1.37 -8.26,4.99 L 1.21,43.28 C 0.76,44.95 0,49.47 0,51.38 c 0,1.9 0.03,40.46 0.03,40.46 0.03,3.41 2.54,6.16 6.02,6.15 3.48,-0.01 5.86,-2.79 5.85,-6.19 0,0 0,-22.03 -0.01,-34.28 L 17.23,35.4 c 0.63,1.5 1.4,3.32 1.65,3.76 0.6,1.03 1.19,1.75 2.4,2.3 0,0 7,2.84 9.71,4.05 1.63,0.62 3.41,0.07 4.44,-1.2 l 0.38,-0.76 0.13,0.23 z"
+           fill="#000000"
+           stroke="none"
+           pointer-events="all"
+           id="path30-2"
+           sodipodi:nodetypes="ccccccccscscccccccccc"
+           style="stroke-width:2.15235" />
+        <ellipse
+           cx="18.76"
+           cy="8.04"
+           rx="8.0898876"
+           ry="8.0384808"
+           fill="#000000"
+           stroke="none"
+           pointer-events="all"
+           id="ellipse30"
+           style="stroke-width:2.15235" />
+      </g>
+      <g
+         id="g37"
+         inkscape:label="display-case"
+         style="stroke-width:2.15235">
+        <g
+           id="g35"
+           transform="translate(-7.9497505,7.0710679)"
+           style="stroke-width:2.15235">
+          <path
+             d="m 58.295783,70.3266 c -1.84,1.67 -16.56,15.67 -16.56,15.67 l 3.93,3.8 c 0,0 13.08,-11.83 15.04,-13.62 0.49,-0.44 1.31,-1.28 2.83,-1.28 h 44.610007 v -6.05 H 61.985783 c -1.35,0 -2.63,0.51 -3.69,1.48 z"
+             fill="#000000"
+             stroke="none"
+             pointer-events="all"
+             id="path27-0-5"
+             style="stroke-width:2.15235" />
+          <path
+             d="m 42.635783,81.1266 15.75,-14.37 -2.05,-2.15 -15.75,14.37 z"
+             fill="#000000"
+             stroke="none"
+             pointer-events="all"
+             id="path31-0-0"
+             style="stroke-width:2.15235" />
+        </g>
+        <g
+           id="g35-9"
+           transform="matrix(0.75927391,0,0,1,18.083762,-16.835366)"
+           style="stroke-width:2.4701">
+          <path
+             d="m 58.295783,70.3266 c -1.84,1.67 -16.56,15.67 -16.56,15.67 l 3.93,3.8 c 0,0 13.08,-11.83 15.04,-13.62 0.49,-0.44 1.31,-1.28 2.83,-1.28 h 44.610007 v -6.05 H 61.985783 c -1.35,0 -2.63,0.51 -3.69,1.48 z"
+             fill="#000000"
+             stroke="none"
+             pointer-events="all"
+             id="path27-0-5-5"
+             style="stroke-width:2.4701" />
+          <path
+             d="m 42.635783,81.1266 15.75,-14.37 -2.05,-2.15 -15.75,14.37 z"
+             fill="#000000"
+             stroke="none"
+             pointer-events="all"
+             id="path31-0-0-3"
+             style="stroke-width:2.4701" />
+        </g>
+        <g
+           id="g35-1"
+           transform="matrix(0.61274499,0,0,1,33.930249,-40.741801)"
+           style="stroke-width:2.74963">
+          <path
+             d="m 58.295783,70.3266 c -1.84,1.67 -16.56,15.67 -16.56,15.67 l 3.93,3.8 c 0,0 13.08,-11.83 15.04,-13.62 0.49,-0.44 1.31,-1.28 2.83,-1.28 h 44.610007 v -6.05 H 61.985783 c -1.35,0 -2.63,0.51 -3.69,1.48 z"
+             fill="#000000"
+             stroke="none"
+             pointer-events="all"
+             id="path27-0-5-2"
+             style="stroke-width:2.74963" />
+          <path
+             d="m 42.635783,81.1266 15.75,-14.37 -2.05,-2.15 -15.75,14.37 z"
+             fill="#000000"
+             stroke="none"
+             pointer-events="all"
+             id="path31-0-0-0"
+             style="stroke-width:2.74963" />
+        </g>
+        <g
+           id="g36"
+           transform="matrix(0.45574972,0,0,1,54.531723,0)"
+           style="stroke-width:3.18823">
+          <path
+             d="m 50.346032,5.678365 c -1.84,1.67 -16.56,15.67 -16.56,15.67 l 3.93,3.8 c 0,0 13.08,-11.83 15.04,-13.62 0.49,-0.44 1.31,-1.28 2.83,-1.28 h 44.610008 v -6.05 H 54.036032 c -1.35,0 -2.63,0.51 -3.69,1.48 z"
+             fill="#000000"
+             stroke="none"
+             pointer-events="all"
+             id="path27-0-5-4"
+             style="stroke-width:3.18823" />
+          <path
+             d="m 34.686032,16.478365 15.75,-14.37 -2.05,-2.15 -15.75,14.37 z"
+             fill="#000000"
+             stroke="none"
+             pointer-events="all"
+             id="path31-0-0-5"
+             style="stroke-width:3.18823" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     id="g16"
+     transform="matrix(0.26458333,0,0,0.26458333,14.802356,4.646101)"
+     inkscape:label="3">
+    <rect
+       x="404"
+       y="12"
+       width="120"
+       height="80"
+       rx="12"
+       ry="12"
+       fill="#d5e8d4"
+       stroke="#82b366"
+       pointer-events="all"
+       id="rect15" />
+    <text
+       x="463.71582"
+       y="47.819336"
+       fill="light-dark(#000000, #ffffff)"
+       font-family="Helvetica"
+       font-size="12px"
+       text-anchor="middle"
+       id="text16"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+         sodipodi:role="line"
+         id="tspan9"
+         x="463.71582"
+         y="47.819336">Klients veic</tspan><tspan
+         sodipodi:role="line"
+         id="tspan10"
+         x="463.71582"
+         y="62.819336">pasūtījumu pie mums</tspan></text>
+    <g
+       data-cell-id="yuITEQSPYBazJoX66-pm-23"
+       id="g27"
+       inkscape:label="mail"
+       transform="matrix(0.51916737,0,0,0.51916737,224.38068,-25.689878)">
+      <g
+         id="g26-1">
+        <rect
+           x="500"
+           y="25"
+           width="99"
+           height="75"
+           fill="none"
+           stroke="none"
+           pointer-events="all"
+           id="rect25" />
+        <path
+           d="M 598.99,100 H 500 V 25 h 99 v 75 z m -87.28,-6.94 h 75.58 l -24.87,-25.57 -4.71,4.77 c -2.03,2.04 -4.95,3.22 -8.02,3.22 -0.02,0 -0.03,0 -0.05,0 -3.07,-0.01 -6,-1.22 -8.02,-3.28 l -4.79,-4.88 z M 506.9,36.9 v 51.18 l 25.06,-25.7 z m 60.38,25.67 24.81,25.51 v -50.6 z m -55.56,-30.63 34.8,35.37 c 0.75,0.77 1.9,1.22 3.14,1.22 0.01,0 0.01,0 0.02,0 1.23,0 2.4,-0.44 3.13,-1.18 l 35.01,-35.41 z"
+           fill="#000000"
+           stroke="none"
+           pointer-events="all"
+           id="path25-8" />
+      </g>
+    </g>
+  </g>
+  <g
+     id="g22"
+     transform="matrix(0.26458333,0,0,0.26458333,15.665628,5.369004)"
+     inkscape:label="4">
+    <rect
+       x="604"
+       y="12"
+       width="120"
+       height="80"
+       rx="12"
+       ry="12"
+       fill="#d5e8d4"
+       stroke="#82b366"
+       pointer-events="all"
+       id="rect21" />
+    <text
+       x="663.95605"
+       y="40.319336"
+       fill="light-dark(#000000, #ffffff)"
+       font-family="Helvetica"
+       font-size="12px"
+       text-anchor="middle"
+       id="text22"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+         sodipodi:role="line"
+         id="tspan11"
+         x="663.95605"
+         y="40.319336">Klients veic apmaksu</tspan><tspan
+         sodipodi:role="line"
+         id="tspan12"
+         x="663.95605"
+         y="55.319336">par mūsu</tspan><tspan
+         sodipodi:role="line"
+         x="663.95605"
+         y="70.319336"
+         id="tspan13">pakalpojumiem</tspan></text>
+    <g
+       id="g30-5"
+       transform="matrix(0.53619879,0,0,0.53619879,592.34249,-161.96486)"
+       inkscape:label="payment">
+      <rect
+         x="0"
+         y="0"
+         width="99"
+         height="93"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect25-0"
+         transform="translate(153.2371,268.16492)" />
+      <path
+         d="m 51.43,26.46 v 3.26 c 3.04,-0.44 2.74,-3.19 0,-3.26 z m -3.16,-3.91 v -2.87 c -2.26,0.39 -2.21,2.83 0,2.87 z m 1.57,-10.41 c -6.98,0 -12.64,5.71 -12.64,12.74 0,7.04 5.66,12.75 12.64,12.75 6.99,0 12.65,-5.71 12.65,-12.75 C 62.48,17.84 56.83,12.14 49.84,12.14 Z m 1.55,20.81 v 2.28 h -3.14 v -2.31 c -1.8,-0.27 -5.09,-2.02 -5.29,-5.77 h 3.3 c 0.21,0.96 0.49,2.13 1.99,2.56 v -3.78 c -2.07,-0.3 -5.03,-1.21 -5.03,-4.55 0,-3.75 4.12,-4.92 5.04,-4.92 v -2.27 h 3.1 v 2.27 c 2.1,0.12 5.14,1.89 5.14,5.24 h -3.27 c -0.08,-1 -0.85,-1.98 -1.84,-2.05 v 3.47 c 2.49,0.26 5.43,1.22 5.43,4.6 0.01,2.93 -2.94,5.09 -5.43,5.23 z m 10.72,34.56 c -6.98,0 -12.64,5.71 -12.64,12.74 0,7.04 5.66,12.75 12.64,12.75 6.99,0 12.65,-5.71 12.65,-12.75 0,-7.03 -5.65,-12.74 -12.65,-12.74 z m 5.68,14.71 v 3.11 h -3.94 v 4.38 H 60.5 v -4.38 h -4.21 v -3.05 h 4.26 l -5.54,-9.83 h 3.67 l 3.41,6.06 3.7,-6.06 h 3.39 l -5.49,9.77 z M 22.24,53.06 c -6.98,0 -12.64,5.71 -12.64,12.75 0,7.04 5.66,12.76 12.64,12.76 6.99,0 12.65,-5.71 12.65,-12.75 0,-7.04 -5.66,-12.76 -12.65,-12.76 z m 0.4,10.32 v 3.04 h -2.27 v 7.28 h -3.22 v -7.25 h -1.92 v -3.04 h 1.92 v -2.7 c 0,-1.05 1,-4.24 4.81,-4.24 3.89,0 4.72,3.08 4.72,5.66 h -3.16 c 0,-1.66 -0.22,-2.53 -1.53,-2.53 -1.39,0 -1.62,0.97 -1.62,2.5 v 1.28 z m 7.26,3.01 c -2.6,0.32 -3.19,1.72 -3.19,3.45 v 3.85 H 23.52 V 63.38 h 3.19 v 1.61 C 27.4,64.18 28.2,63.32 29.9,63.32 Z M 0,0 v 49.47 h 58.13 c 1.1,5.91 6.25,10.39 12.43,10.39 6.19,0 11.33,-4.47 12.43,-10.39 H 99 V 0 Z m 69.27,45.05 h 2.87 v 2.74 h -2.35 c 0.29,2.52 -1.14,3.57 -1.22,4.41 h 7.82 v 2.75 H 64.69 V 52.2 c 1.32,-0.89 2.02,-3.17 1.59,-4.39 h -2.44 v -2.8 h 1.96 c -0.52,-1.27 -0.52,-1.69 -0.52,-2.81 0,-1.11 0.9,-4.73 5.64,-4.7 4.36,0.02 5.63,3.64 5.63,6.24 h -3.32 c -0.22,-1.57 -0.84,-2.85 -2.28,-2.85 -2.2,0 -2.21,1.39 -2.21,1.87 0,0.48 0.08,1.65 0.53,2.29 z m 20.4,-4.98 H 81.1 c -2.27,-3.44 -6.14,-5.7 -10.54,-5.7 -4.4,0 -8.27,2.26 -10.53,5.7 H 9.33 V 9.4 h 80.33 v 30.67 z"
+         fill="#000000"
+         stroke="none"
+         pointer-events="all"
+         id="path25-0"
+         transform="translate(153.2371,268.16492)" />
+    </g>
+  </g>
+  <g
+     id="g28"
+     transform="matrix(0.26458333,0,0,0.26458333,-37.251039,50.233911)"
+     inkscape:label="5">
+    <rect
+       x="804"
+       y="12"
+       width="120"
+       height="80"
+       rx="12"
+       ry="12"
+       fill="#dae8fc"
+       stroke="#6c8ebf"
+       pointer-events="all"
+       id="rect27" />
+    <text
+       x="863.93262"
+       y="40.348633"
+       fill="light-dark(#000000, #ffffff)"
+       font-family="Helvetica"
+       font-size="12px"
+       text-anchor="middle"
+       id="text28"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+         sodipodi:role="line"
+         id="tspan15"
+         x="863.93262"
+         y="40.348633">Mēs noformējam</tspan><tspan
+         sodipodi:role="line"
+         id="tspan16"
+         x="863.93262"
+         y="55.348633">pasūtījumu</tspan><tspan
+         sodipodi:role="line"
+         x="863.93262"
+         y="70.348633"
+         id="tspan17">pie ražotājiem</tspan></text>
+    <g
+       data-cell-id="yuITEQSPYBazJoX66-pm-31"
+       id="g36-9"
+       inkscape:label="order"
+       transform="matrix(0.59229333,0,0,0.59229333,868.28073,-21.375848)"
+       style="stroke-width:1.68835">
+      <rect
+         x="0"
+         y="0"
+         width="98"
+         height="95"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect34"
+         style="stroke-width:1.68835" />
+      <path
+         d="m 24.57,15.42 c 4.24,0.01 7.67,-3.43 7.66,-7.71 C 32.24,3.46 28.81,0.02 24.57,0 c -4.23,0.01 -7.66,3.46 -7.66,7.71 0.01,4.28 3.43,7.72 7.66,7.71 z M 4.51,42.78 h 6.72 l 4.06,-14.92 h 1.68 l -4.02,14.92 h 23.83 l -4.3,-14.92 h 1.78 l 2.27,7.31 c 1.06,3.09 3.77,3.8 5.89,1.15 l 8.2,-10 c 2.6,-3.37 -2.06,-6.92 -4.74,-3.98 l -4.89,5.87 C 41,28.3 40.04,24.97 40.04,24.97 38.93,21.06 35.22,17.18 29.66,17.16 H 19.18 c -4.97,0.02 -8.86,4.38 -9.68,7.12 z M 55.08,22.44 V 7.07 h -6.87 v 15.37 z m 23.19,-6.92 c 4.25,-0.01 7.67,-3.46 7.66,-7.71 0.01,-4.28 -3.41,-7.72 -7.66,-7.71 -4.22,-0.01 -7.65,3.43 -7.66,7.71 0.01,4.25 3.44,7.7 7.66,7.71 z m 9.7,72.79 V 45.72 H 93.6 V 22.49 c 0.01,-3.04 -2.7,-5.37 -6.58,-5.37 H 69.03 c -3.57,0 -4.44,1.16 -5.44,2.13 L 48.61,37.37 c -3.04,3.79 2.38,8.21 5.44,4.67 L 68.49,24.88 v 63.53 c -0.02,6.38 8.88,6.59 8.9,0.2 V 52.53 h 1.72 v 35.88 c 0.02,6.36 8.87,6.38 8.86,-0.1 z M 98,53.29 V 44.53 H 0 v 8.76 z"
+         fill="#000000"
+         stroke="none"
+         pointer-events="all"
+         id="path34-5"
+         style="stroke-width:1.68835" />
+    </g>
+  </g>
+  <g
+     id="g40"
+     transform="matrix(0.26458333,0,0,0.26458333,-37.086372,2.219352)"
+     inkscape:label="7">
+    <rect
+       x="604"
+       y="192"
+       width="120"
+       height="80"
+       rx="12"
+       ry="12"
+       fill="#d5e8d4"
+       stroke="#82b366"
+       pointer-events="all"
+       id="rect39" />
+    <text
+       x="663.93262"
+       y="227.81934"
+       fill="light-dark(#000000, #ffffff)"
+       font-family="Helvetica"
+       font-size="12px"
+       text-anchor="middle"
+       id="text40"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+         sodipodi:role="line"
+         id="tspan23"
+         x="663.93262"
+         y="227.81934">Klients apmaksa</tspan><tspan
+         sodipodi:role="line"
+         id="tspan24"
+         x="663.93262"
+         y="242.81934">pasūtījumus</tspan></text>
+    <g
+       id="g30-5-1"
+       transform="matrix(0.54380206,0,0,0.54380206,590.42464,15.740222)"
+       inkscape:label="payment">
+      <rect
+         x="0"
+         y="0"
+         width="99"
+         height="93"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect25-0-3"
+         transform="translate(153.2371,268.16492)" />
+      <path
+         d="m 51.43,26.46 v 3.26 c 3.04,-0.44 2.74,-3.19 0,-3.26 z m -3.16,-3.91 v -2.87 c -2.26,0.39 -2.21,2.83 0,2.87 z m 1.57,-10.41 c -6.98,0 -12.64,5.71 -12.64,12.74 0,7.04 5.66,12.75 12.64,12.75 6.99,0 12.65,-5.71 12.65,-12.75 C 62.48,17.84 56.83,12.14 49.84,12.14 Z m 1.55,20.81 v 2.28 h -3.14 v -2.31 c -1.8,-0.27 -5.09,-2.02 -5.29,-5.77 h 3.3 c 0.21,0.96 0.49,2.13 1.99,2.56 v -3.78 c -2.07,-0.3 -5.03,-1.21 -5.03,-4.55 0,-3.75 4.12,-4.92 5.04,-4.92 v -2.27 h 3.1 v 2.27 c 2.1,0.12 5.14,1.89 5.14,5.24 h -3.27 c -0.08,-1 -0.85,-1.98 -1.84,-2.05 v 3.47 c 2.49,0.26 5.43,1.22 5.43,4.6 0.01,2.93 -2.94,5.09 -5.43,5.23 z m 10.72,34.56 c -6.98,0 -12.64,5.71 -12.64,12.74 0,7.04 5.66,12.75 12.64,12.75 6.99,0 12.65,-5.71 12.65,-12.75 0,-7.03 -5.65,-12.74 -12.65,-12.74 z m 5.68,14.71 v 3.11 h -3.94 v 4.38 H 60.5 v -4.38 h -4.21 v -3.05 h 4.26 l -5.54,-9.83 h 3.67 l 3.41,6.06 3.7,-6.06 h 3.39 l -5.49,9.77 z M 22.24,53.06 c -6.98,0 -12.64,5.71 -12.64,12.75 0,7.04 5.66,12.76 12.64,12.76 6.99,0 12.65,-5.71 12.65,-12.75 0,-7.04 -5.66,-12.76 -12.65,-12.76 z m 0.4,10.32 v 3.04 h -2.27 v 7.28 h -3.22 v -7.25 h -1.92 v -3.04 h 1.92 v -2.7 c 0,-1.05 1,-4.24 4.81,-4.24 3.89,0 4.72,3.08 4.72,5.66 h -3.16 c 0,-1.66 -0.22,-2.53 -1.53,-2.53 -1.39,0 -1.62,0.97 -1.62,2.5 v 1.28 z m 7.26,3.01 c -2.6,0.32 -3.19,1.72 -3.19,3.45 v 3.85 H 23.52 V 63.38 h 3.19 v 1.61 C 27.4,64.18 28.2,63.32 29.9,63.32 Z M 0,0 v 49.47 h 58.13 c 1.1,5.91 6.25,10.39 12.43,10.39 6.19,0 11.33,-4.47 12.43,-10.39 H 99 V 0 Z m 69.27,45.05 h 2.87 v 2.74 h -2.35 c 0.29,2.52 -1.14,3.57 -1.22,4.41 h 7.82 v 2.75 H 64.69 V 52.2 c 1.32,-0.89 2.02,-3.17 1.59,-4.39 h -2.44 v -2.8 h 1.96 c -0.52,-1.27 -0.52,-1.69 -0.52,-2.81 0,-1.11 0.9,-4.73 5.64,-4.7 4.36,0.02 5.63,3.64 5.63,6.24 h -3.32 c -0.22,-1.57 -0.84,-2.85 -2.28,-2.85 -2.2,0 -2.21,1.39 -2.21,1.87 0,0.48 0.08,1.65 0.53,2.29 z m 20.4,-4.98 H 81.1 c -2.27,-3.44 -6.14,-5.7 -10.54,-5.7 -4.4,0 -8.27,2.26 -10.53,5.7 H 9.33 V 9.4 h 80.33 v 30.67 z"
+         fill="#000000"
+         stroke="none"
+         pointer-events="all"
+         id="path25-0-2"
+         transform="translate(153.2371,268.16492)" />
+    </g>
+  </g>
+  <g
+     id="g52"
+     transform="matrix(0.26458333,0,0,0.26458333,13.19095,2.261423)"
+     inkscape:label="9">
+    <rect
+       x="204"
+       y="192"
+       width="120"
+       height="80"
+       rx="12"
+       ry="12"
+       fill="#d5e8d4"
+       stroke="#82b366"
+       pointer-events="all"
+       id="rect51" />
+    <text
+       x="263.97363"
+       y="227.81934"
+       fill="light-dark(#000000, #ffffff)"
+       font-family="Helvetica"
+       font-size="12px"
+       text-anchor="middle"
+       id="text52"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+         sodipodi:role="line"
+         id="tspan25"
+         x="263.97363"
+         y="227.81934">Klients sagaida</tspan><tspan
+         sodipodi:role="line"
+         id="tspan26"
+         x="263.97363"
+         y="242.81934">pasūtījumu izpildi</tspan></text>
+    <g
+       data-cell-id="yuITEQSPYBazJoX66-pm-24"
+       id="g33"
+       inkscape:label="waiting"
+       transform="matrix(0.51209632,0,0,0.51209632,212.37304,161.25084)">
+      <g
+         id="g32-0">
+        <rect
+           x="153"
+           y="0"
+           width="77"
+           height="100"
+           fill="none"
+           stroke="none"
+           pointer-events="all"
+           id="rect27-3" />
+        <path
+           d="m 171.7,20.6 c 5.77,-0.02 10.45,-4.62 10.46,-10.3 C 182.15,4.62 177.48,0.01 171.7,0 c -5.75,0.01 -10.42,4.62 -10.44,10.3 0.02,5.68 4.69,10.29 10.44,10.3 z"
+           fill="#000000"
+           stroke="none"
+           pointer-events="all"
+           id="path27" />
+        <path
+           d="m 163.77,33.09 c -1.87,-11.83 15.46,-15.42 18.24,-3.3 l 4.73,23.19 h 17.61 c 5.15,0.02 7.81,4.07 7.83,7.82 v 31.52 c -0.01,7.68 -11.07,7.64 -11.07,-0.1 0,-7.21 0,-24.57 0,-24.57 h -22.5 c -5.24,0.01 -8.53,-3.54 -9.37,-7.61 z"
+           fill="#000000"
+           stroke="none"
+           pointer-events="all"
+           id="path28" />
+        <path
+           d="m 192.87,69.72 c 5.83,0 5.8,8.52 0.05,8.53 h -16.11 c -7.87,0 -15.7,-5.82 -17.77,-14.81 l -5,-24.11 C 153,33.87 161,32.04 162.18,37.65 l 4.79,23.04 c 1.31,5.9 5.74,9.03 11.07,9.03 z"
+           fill="#000000"
+           stroke="none"
+           pointer-events="all"
+           id="path29" />
+        <path
+           d="m 214.7,17.25 7.78,-3.7 c 1.11,-0.5 0.39,-2.11 -0.78,-1.57 l -6.59,2.89 V 7.21 c -0.02,-1.23 -1.88,-1.17 -1.85,0 v 9.18 c 0.01,0.71 0.76,1.21 1.44,0.86 z"
+           fill="#000000"
+           stroke="none"
+           pointer-events="all"
+           id="path30" />
+        <path
+           d="m 214.75,0.46 c -8.44,-0.01 -15.27,6.72 -15.29,15.02 0.01,8.3 6.84,15.03 15.29,15.01 8.42,0.02 15.24,-6.71 15.24,-15.01 C 230,7.18 223.17,0.45 214.75,0.46 Z m 0,27.51 c -7.01,0 -12.68,-5.59 -12.66,-12.48 -0.02,-6.9 5.66,-12.5 12.66,-12.5 6.98,0 12.65,5.6 12.66,12.5 -0.01,6.89 -5.68,12.48 -12.66,12.48 z"
+           fill="#000000"
+           stroke="none"
+           pointer-events="all"
+           id="path31-4" />
+        <path
+           d="m 214.7,17.25 7.78,-3.7 c 1.11,-0.5 0.39,-2.11 -0.78,-1.57 l -6.59,2.89 V 7.21 c -0.02,-1.23 -1.88,-1.17 -1.85,0 v 9.18 c 0.01,0.71 0.76,1.21 1.44,0.86 z"
+           fill="#000000"
+           stroke="none"
+           pointer-events="all"
+           id="path32-9" />
+      </g>
+    </g>
+  </g>
+  <g
+     id="g58"
+     transform="matrix(0.26458333,0,0,0.26458333,12.576918,0.65730401)"
+     inkscape:label="10">
+    <rect
+       x="4"
+       y="192"
+       width="120"
+       height="80"
+       rx="12"
+       ry="12"
+       fill="#d5e8d4"
+       stroke="#82b366"
+       pointer-events="all"
+       id="rect57" />
+    <text
+       x="64.029297"
+       y="227.81934"
+       fill="light-dark(#000000, #ffffff)"
+       font-family="Helvetica"
+       font-size="12px"
+       text-anchor="middle"
+       id="text58"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"><tspan
+         sodipodi:role="line"
+         id="tspan27"
+         x="64.029297"
+         y="227.81934">Klients saņem</tspan><tspan
+         sodipodi:role="line"
+         id="tspan28"
+         x="64.029297"
+         y="242.81934">furnitūru un detaļas</tspan></text>
+    <g
+       data-cell-id="yuITEQSPYBazJoX66-pm-22"
+       id="g25"
+       inkscape:label="cargo-car"
+       transform="matrix(0.52859547,0,0,0.52859547,115.68553,196.45024)">
+      <g
+         id="g24-8"
+         transform="translate(-395.1904,-80.651103)">
+        <rect
+           x="320"
+           y="37"
+           width="99"
+           height="51"
+           fill="none"
+           stroke="none"
+           pointer-events="all"
+           id="rect21-9" />
+        <ellipse
+           cx="333.82001"
+           cy="79.809998"
+           rx="8.1669016"
+           ry="8.1851854"
+           fill="#000000"
+           stroke="none"
+           pointer-events="all"
+           id="ellipse21" />
+        <ellipse
+           cx="395.76001"
+           cy="79.809998"
+           rx="8.1669016"
+           ry="8.1851854"
+           fill="#000000"
+           stroke="none"
+           pointer-events="all"
+           id="ellipse22" />
+        <path
+           d="M 352.04,37 V 69.3 H 419 V 37 Z"
+           fill="#000000"
+           stroke="none"
+           pointer-events="all"
+           id="path22" />
+        <path
+           d="M 389.42,71.57 H 347.79 V 45 l -21.42,1.64 c 0,0 -4.69,11.75 -6.37,15.87 v 11.2 4.02 c 0,1.15 0.93,2.07 2.06,2.07 h 1.42 c 0,-5.76 4.63,-10.43 10.33,-10.43 5.71,0 10.33,4.67 10.33,10.43 h 41.27 c 0.01,-3.34 1.58,-6.32 4.01,-8.23 z m -49.89,-10.9 -16.48,2.09 4.77,-12.48 11.72,-0.9 v 11.29 z"
+           fill="#000000"
+           stroke="none"
+           pointer-events="all"
+           id="path23" />
+        <path
+           d="m 418.95,71.57 h -16.86 c 2.43,1.91 4.01,4.89 4.01,8.24 h 2.41 4.28 l 6.18,-2.2 z"
+           fill="#000000"
+           stroke="none"
+           pointer-events="all"
+           id="path24" />
+      </g>
+    </g>
+  </g>
+  <g
+     id="g62"
+     inkscape:label="11"
+     transform="matrix(0.26458333,0,0,0.26458333,13.075813,8.731771)">
+    <rect
+       x="4"
+       y="332"
+       width="120"
+       height="80"
+       rx="12"
+       ry="12"
+       fill="#d5e8d4"
+       stroke="#82b366"
+       pointer-events="all"
+       id="rect61" />
+    <text
+       x="63.956055"
+       y="376.81934"
+       fill="light-dark(#000000, #ffffff)"
+       font-family="Helvetica"
+       font-size="12px"
+       text-anchor="middle"
+       id="text62"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Tahoma;-inkscape-font-specification:'Tahoma, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">Klients veic montāžu</text>
+    <g
+       id="g36-0"
+       transform="matrix(0.46966992,0,0,0.46966992,81.283266,311.0857)"
+       style="stroke-width:2.12915"
+       inkscape:label="assembly">
+      <path
+         d="m 69.9,20.23 c 4.35,0 7.9,-3.48 7.89,-7.78 0,-4.3 -3.54,-7.78 -7.89,-7.77 -4.37,-0.01 -7.91,3.47 -7.9,7.77 -0.01,4.3 3.53,7.79 7.9,7.78 z m -10.18,14.32 0.05,59.43 c 0.01,5.93 8.9,5.88 8.88,-0.14 L 68.7,59.26 h 1.72 V 93.8 c -0.02,6.04 8.96,6.2 8.96,0.18 v -59.7 h 1.58 V 55.6 c -0.02,5.12 7.03,5.12 7.02,0.09 V 32.4 C 88,26.11 83.26,22.43 78.26,22.43 H 64.18 c -3.34,0 -5.76,1.29 -7.81,4.16 L 49.26,36.8 H 36.95 c -4.98,0 -4.7,6.93 -0.09,6.91 h 14.21 c 1.11,0.02 2.46,-0.39 3.25,-1.56 z"
+         fill="#000000"
+         stroke="none"
+         pointer-events="all"
+         id="path31-9"
+         style="stroke-width:2.12915"
+         sodipodi:nodetypes="cccccccccccscccccssccscccc" />
+      <path
+         id="rect41"
+         style="fill:#ffffff;stroke:#000000;stroke-width:4.53329;stroke-miterlimit:4.4"
+         d="M 0.2660727,7.2407081 V 29.330691 H 16.767024 V 7.2407081 Z m 0,22.2022619 V 51.532953 H 16.767024 V 29.44297 Z m 0,22.110775 V 73.643728 H 16.767024 V 51.553745 Z m 0,22.202263 V 95.84599 H 16.767024 V 73.756008 Z" />
+      <path
+         id="rect42"
+         style="fill:#ffffff;stroke:#000000;stroke-width:4.53329;stroke-miterlimit:4.4"
+         d="m 32.448749,26.490431 v 3.576315 h 5.376948 c -0.125927,1.877766 -0.203767,4.331814 -0.203767,7.056985 0,5.890607 0.359493,10.633299 0.802592,10.633299 0.443098,0 0.798433,-4.742692 0.798433,-10.633299 0,-2.725171 -0.07784,-5.179219 -0.203767,-7.056985 h 5.376948 v -3.576315 h -5.971614 z" />
+    </g>
+  </g>
+</svg>
