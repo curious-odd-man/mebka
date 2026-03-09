@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>
-        MebKa
+        MebKa - Katalogs
     </title>
-    <link rel="icon" type="image/x-icon" href="img/0b4deb6b0532fe127128162033b05b399cee4e70.svg">
-    <script src="js/bootstrap.bundle.js"></script>
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/71208b702c26233b89a36ef087f48fd883f2de49.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../img/0b4deb6b0532fe127128162033b05b399cee4e70.svg">
+    <script src="../js/bootstrap.bundle.js"></script>
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/71208b702c26233b89a36ef087f48fd883f2de49.css" rel="stylesheet">
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -27,8 +27,8 @@
 <header class="sticky-top">
     <div class="grey-background navbar navbar-expand-lg bd-navbar">
         <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/50eddd400c36b5f6750b13c08bf8a2e0cb865444.svg" alt="MebKa logo" width="100" height="100%">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/50eddd400c36b5f6750b13c08bf8a2e0cb865444.svg" alt="MebKa logo" width="100" height="100%">
             </a>
             <ol class="breadcrumb navbar-nav me-auto mb-2 mb-lg-0 text-center">
                 <li class="breadcrumb-item  active" aria-current="page">
@@ -36,17 +36,20 @@
                 </li>
             </ol>
             <div class="ms-auto mb-2 me-auto mb-lg-0 text-center">
-                <a href="pages/77f9e615d67b37c18aa7808ae8fbc500e78230c2.html">
+                <a href="77f9e615d67b37c18aa7808ae8fbc500e78230c2.html">
                     <svg width="15em" height="100%" viewBox="0 0 440 115">
                         <use xlink:href="../../../../../../../repository/branding/promo-icon.svg"/>
                     </svg>
                 </a>
             </div>
-            
+            <div class="navbar-nav me-auto mb-2 mb-lg-0 text-center" role="search">
+                <input id="searchInputField" class="form-control me-2" type="search" placeholder="Meklēt"
+                       aria-label="Meklēt"/>
+            </div>
             <div class="ms-auto mb-2 mb-lg-0 text-center">
                 <div class="text-secondary pb-1">
                     <svg width="1.3em" height="100%" viewBox="0 0 16 16">
-                        <use xlink:href="img/393ca559c20292fc9bbb7469492b6c53ebaf75c8.svg"/>
+                        <use xlink:href="../img/393ca559c20292fc9bbb7469492b6c53ebaf75c8.svg"/>
                     </svg>
                     <a href="tel:+371 28263953" class="a-hoverable">
                         +371 28263953
@@ -54,7 +57,7 @@
                 </div>
                 <div class="text-secondary">
                     <svg width="1.3em" height="100%" viewBox="0 0 16 16">
-                        <use xlink:href="img/46f4e14743f58b64e3880eee0170de92a50cac6a.svg"/>
+                        <use xlink:href="../img/46f4e14743f58b64e3880eee0170de92a50cac6a.svg"/>
                     </svg>
                     <a href="mailto:mebka@mebka.lv" class="a-hoverable">
                         mebka@mebka.lv
@@ -65,159 +68,176 @@
     </div>
 </header>
 <main class="back mt-1">
-    <div class="container text-center mt-4 mb-4 ">
+    <div class="container text-center mt-4 mb-4">
         <svg class="mb-3 shadow-sm" width="100%" height="100%" viewBox="0 0 1762 513">
-            <use xlink:href="img/c96cb1508a0eb8e6080dc4fcd1a60fe679c619bc.svg"/>
+            <use xlink:href="../img/c96cb1508a0eb8e6080dc4fcd1a60fe679c619bc.svg"/>
         </svg>
-        <section class="landing-background">
-            <h1 class="landing-header">Mēbeles pēc pasūtījuma.<br>Bez galdnieka cenām.</h1>
-
-            <p class="lead mt-4">
-                Ar <strong>MebKa</strong> jūs nepērkat mēbeles — jūs pasūtāt to izgatavošanu pēc mūsu dizainiem un ar
-                jūsu izvēlētājiem materiāliem.
-            </p>
-
-            <a class="btn btn-primary btn-lg mt-4 mb-4" href="pages/643544c9b3ac4fcfbb7b131aab556826c6f073b0.html">Sāc veidot savas mēbeles.</a>
-
-        </section>
-        <section class="landing-section text-center">
-            <div class="container">
-
-                <h2 class="mb-4">Apnika kompromisi?</h2>
-
-                <p class="lead">
-                    Veikali pārdod standartizētas mēbeles. Galdnieki prasa dārgāk par pielāgošanu.
-                </p>
-
-                <div class="row mt-5">
-
-                    <div class="col-md-6">
-                        <div class="p-4 border rounded">
-                            <h5>Samierināties ar "gandrīz atbilst"</h5>
-                            <p>Masveidā ražotas mēbeles reti ideāli iederas jūsu interjerā, stilā un velmēs.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="p-4 border rounded">
-                            <h5>Pārmaksa par pasūtītām mēbelēm</h5>
-                            <p>Galdnieka darbs bieži nozīmē dārgus un lēnus individuālus projektus.</p>
-                        </div>
-                    </div>
-
+        <div class="row row-cols-auto row-gap-4 justify-content-center">
+            <div class="col filterable-card">
+              <a href="1-Biroja-galds-Pamats-.html" class="card standout-hover undecorated" style="width: 18rem;">
+                <img src="../img/4314f43bcbe188cbc6167cf751012d68cf6f6e16.png" class="card-img-top" alt="...">
+                
+                <div class="card-body">
+                  <h5 class="card-title">1. Biroja galds "Pamats"</h5>
+                  <p class="card-text">Vienkāršais galds, kas der jebkuram darbam birojā.</p>
                 </div>
-
-                <p class="mt-5 fw-bold">Izvēlies gudrāku iespēju</p>
-
+              </a>
             </div>
-        </section>
-
-
-        <!-- SOLUTION -->
-        <section class="landing-section bg-light text-center">
-            <div class="container">
-
-                <h2 class="mb-4">Pasūti ar MebKa</h2>
-
-                <p>
-                    Mēs neesam mēbeļu veikals.<br>
-                    Mēs nepārdodam gatavas mēbeles.
-                </p>
-
-                <p>
-                    Mēs piedāvājam iespēju dabūt pielāgotas mēbeles katram.
-                </p>
-            </div>
-        </section>
-
-
-        <!-- HOW IT WORKS -->
-        <section class="landing-section">
-            <div class="col">
-                <div class="container">
-                    <div class="row mt-5">
-                        <h1>
-                            Jaunas mēbeles 3 soļu attālumā!
-                        </h1>
-                    </div>
-                    <div class="row">
-                        <div class="col h3">
-                            1. Izvēlies projektu
-                        </div>
-                        <div class="col h3">
-                            2. Izvēlies materiālus
-                        </div>
-                        <div class="col h3">
-                            3. Pasūti!
-                        </div>
-                    </div>
-                    <div class="row ">
-                        <div class="col">
-                            <img class="w-100" src="img/61e592a6d97f465449e7fe48dbb2615280654bae.jpeg">
-                        </div>
-                        <div class="col">
-                            <img class="w-100" src="img/efa03ab5d57466276db2e810b403c2da4d15a5c7.jpeg">
-                        </div>
-                        <div class="col">
-                            <img class="w-100" src="img/998c46450ad4763f0e4123f9752fc31eabd2946a.jpeg">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            Par pasūtīšanas procesu detalizētāk lasi <a href="pages/c25eff276332e29b858d50e67e135979d6dde488.html">šeit</a>.
-                        </div>
-                    </div>
+            <div class="col filterable-card">
+              <a href="1-1-Biroja-galds-Darbstacija-.html" class="card standout-hover undecorated" style="width: 18rem;">
+                <img src="../img/11ce379c14dc2d739e91b0b40fb068dc80530814.png" class="card-img-top" alt="...">
+                
+                <div class="card-body">
+                  <h5 class="card-title">1-1. Biroja galds "Darbstacija"</h5>
+                  <p class="card-text">Galds ar plauktu datora sistēmas blokam.</p>
                 </div>
+              </a>
             </div>
-        </section>
-
-        <!-- AUDIENCE -->
-        <section class="landing-section text-center landing-background">
-            <div class="container">
-
-                <h2 class="mb-5">Kam der MebKa?</h2>
-
-                <div class="row justify-content-center">
-
-                    <div class="col-md-3">
-                        <img class="w-50" src="img/7129bbaf7abf2bb8b2833aa543248dd7b3e09739.png">
-                        <p>Māju īpašnieki, kas vēlas personalizētas mēbeles</p>
-                    </div>
-
-                    <div class="col-md-3">
-                        <img class="w-50" src="img/fe52fe0bc59be5aaa2fb0125a688d6f2725da81a.png">
-                        <p>Interjera entuziasti, kuriem rūp materiāli</p>
-                    </div>
-
-                    <div class="col-md-3">
-                        <img class="w-50" src="img/18d706fa1b8a5fd0db7baf690c80a6a083e42b90.png">
-                        <p>Budžeta ziņā apzinīgi pircēji, kuri joprojām vēlas pielāgotus produktus</p>
-                    </div>
-
-                    <div class="col-md-3">
-                        <img class="w-50" src="img/11ccd935a1d734d101342ebd268036ffcab2666b.png">
-                        <p>"dari pats" entuziasti, kuriem patīk montāža</p>
-                    </div>
-
+            <div class="col filterable-card">
+              <a href="1-2-Biroja-galds-Kārtība-.html" class="card standout-hover undecorated" style="width: 18rem;">
+                <img src="../img/8194a43ccd7cdd4327da6725013291b94fa0d3e6.png" class="card-img-top" alt="...">
+                <svg class="overlay" width="4rem" viewBox="0 0 134 134">
+                    <use xlink:href="../img/e65afa83fad27a5b05d1b27e2d97ec1f86372282.svg"/>
+                </svg>
+                <div class="card-body">
+                  <h5 class="card-title">1-2. Biroja galds "Kārtība"</h5>
+                  <p class="card-text">Biroja galds ar ietilpīgu mantu glabātuvi.</p>
                 </div>
-
+              </a>
             </div>
-        </section>
-
-        <!-- CTA -->
-        <section class="cta text-center">
-            <div class="container">
-
-                <p class="lead mt-3">
-                    Pielāgotām mēbelēm jābūt pieejamām, nevis ekskluzīvām.
-                </p>
-
-                <a class="btn btn-outline-secondary btn-lg mt-3" href="pages/643544c9b3ac4fcfbb7b131aab556826c6f073b0.html">
-                    Skatīt dizainus
-                </a>
+            <div class="col filterable-card">
+              <a href="1-3-Biroja-galds-Kārtība-AP-.html" class="card standout-hover undecorated" style="width: 18rem;">
+                <img src="../img/512e83e937885e0e74baa37495428a4e73dfdcf8.png" class="card-img-top" alt="...">
+                <svg class="overlay" width="4rem" viewBox="0 0 134 134">
+                    <use xlink:href="../img/e65afa83fad27a5b05d1b27e2d97ec1f86372282.svg"/>
+                </svg>
+                <div class="card-body">
+                  <h5 class="card-title">1-3. Biroja galds "Kārtība AP"</h5>
+                  <p class="card-text">Biroja galds ar ietilpīgu mantu glabātuvi.</p>
+                </div>
+              </a>
             </div>
-        </section>
+            <div class="col filterable-card">
+              <a href="2-Guļamistabas-atvilktne-Slēpta-Telpa-.html" class="card standout-hover undecorated" style="width: 18rem;">
+                <img src="../img/cd3eb80bec185ccc342a60764677edc245dc8ec6.png" class="card-img-top" alt="...">
+                
+                <div class="card-body">
+                  <h5 class="card-title">2. Guļamistabas atvilktne "Slēpta Telpa"</h5>
+                  <p class="card-text">Ērta mantu glabātuve, kas nebojās jūsu grīdu.</p>
+                </div>
+              </a>
+            </div>
+            <div class="col filterable-card">
+              <a href="3-Skapis-zem-izlietnes-ar-atvilktnēm-Līdzsvars-A-.html" class="card standout-hover undecorated" style="width: 18rem;">
+                <img src="../img/857c0c75e6d3da912a7434416fe7e742f509e316.png" class="card-img-top" alt="...">
+                <svg class="overlay" width="4rem" viewBox="0 0 134 134">
+                    <use xlink:href="../img/e65afa83fad27a5b05d1b27e2d97ec1f86372282.svg"/>
+                </svg>
+                <div class="card-body">
+                  <h5 class="card-title">3. Skapis zem izlietnes ar atvilktnēm "Līdzsvars A"</h5>
+                  <p class="card-text">Piekaramais skapītis zem izlietnes ar divām atvilktnēm</p>
+                </div>
+              </a>
+            </div>
+            <div class="col filterable-card">
+              <a href="4-Skapis-zem-izlietnes-ar-plauktu-Līdzsvars-D-.html" class="card standout-hover undecorated" style="width: 18rem;">
+                <img src="../img/43039a12e7afadcbf6c904117cf8975e7fa1b92b.png" class="card-img-top" alt="...">
+                <svg class="overlay" width="4rem" viewBox="0 0 134 134">
+                    <use xlink:href="../img/e65afa83fad27a5b05d1b27e2d97ec1f86372282.svg"/>
+                </svg>
+                <div class="card-body">
+                  <h5 class="card-title">4. Skapis zem izlietnes ar plauktu "Līdzsvars D"</h5>
+                  <p class="card-text">Piekaramais skapis zem izlietnes ar vienu plauktu</p>
+                </div>
+              </a>
+            </div>
+            <div class="col filterable-card">
+              <a href="5-Skapis-Portāls-.html" class="card standout-hover undecorated" style="width: 18rem;">
+                <img src="../img/a545e49226a4f7a3d2e5833d07a3965a3cd5bf0a.png" class="card-img-top" alt="...">
+                
+                <div class="card-body">
+                  <h5 class="card-title">5. Skapis "Portāls"</h5>
+                  <p class="card-text">Ietilpīgs  skapis ar plauktiem</p>
+                </div>
+              </a>
+            </div>
+            <div class="col filterable-card">
+              <a href="7-Skapis-veļas-mašīnai-Tornis-.html" class="card standout-hover undecorated" style="width: 18rem;">
+                <img src="../img/dc4b5752e3fd001a339323112c453efd6959e0a3.png" class="card-img-top" alt="...">
+                <svg class="overlay" width="4rem" viewBox="0 0 134 134">
+                    <use xlink:href="../img/e65afa83fad27a5b05d1b27e2d97ec1f86372282.svg"/>
+                </svg>
+                <div class="card-body">
+                  <h5 class="card-title">7. Skapis veļas mašīnai "Tornis"</h5>
+                  <p class="card-text">Stilīgs skapis veļas mašīnai ar plauktiem</p>
+                </div>
+              </a>
+            </div>
+            <div class="col filterable-card">
+              <a href="8-Skapis-veļas-mašīnai-un-žāvētājam-Dvīņu-Tornis-.html" class="card standout-hover undecorated" style="width: 18rem;">
+                <img src="../img/77f054ee0050ec55d6b95933503f5079ae70aa22.png" class="card-img-top" alt="...">
+                
+                <div class="card-body">
+                  <h5 class="card-title">8. Skapis veļas mašīnai un žāvētājam "Dvīņu Tornis"</h5>
+                  <p class="card-text">Stilīgs skapis veļas mašīnai un žāvētājam</p>
+                </div>
+              </a>
+            </div>
+            <div class="col filterable-card">
+              <a href="9-Skapis-vannas-istabā-Nišas-Tornis-.html" class="card standout-hover undecorated" style="width: 18rem;">
+                <img src="../img/12560600f38cc4f341ca9f67dfa896a9037e90fc.png" class="card-img-top" alt="...">
+                
+                <div class="card-body">
+                  <h5 class="card-title">9. Skapis vannas istabā "Nišas Tornis"</h5>
+                  <p class="card-text">Ietilpīgs  skapis ar dekoratīvu plauktu vannas istabā</p>
+                </div>
+              </a>
+            </div>
+            <div class="col filterable-card">
+              <a href="10-Vieda-Pārtīšanas-kumode-Novas-Šūpulis-.html" class="card standout-hover undecorated" style="width: 18rem;">
+                <img src="../img/984878b99fdfc5e00dae7491c60af4ed926d2aed.png" class="card-img-top" alt="...">
+                <svg class="overlay" width="4rem" viewBox="0 0 134 134">
+                    <use xlink:href="../img/e65afa83fad27a5b05d1b27e2d97ec1f86372282.svg"/>
+                </svg>
+                <div class="card-body">
+                  <h5 class="card-title">10. Vieda Pārtīšanas kumode "Novas Šūpulis"</h5>
+                  <p class="card-text">Kompakta un ietilpīga pārtīšanas kumode</p>
+                </div>
+              </a>
+            </div>
+            <div class="col filterable-card">
+              <a href="11-Moduļu-skapis-Terraforma-.html" class="card standout-hover undecorated" style="width: 18rem;">
+                <img src="../img/affda835d2776972b8c556e3fc83d1924470de36.png" class="card-img-top" alt="...">
+                <svg class="overlay" width="4rem" viewBox="0 0 134 134">
+                    <use xlink:href="../img/e65afa83fad27a5b05d1b27e2d97ec1f86372282.svg"/>
+                </svg>
+                <div class="card-body">
+                  <h5 class="card-title">11. Moduļu skapis "Terraforma"</h5>
+                  <p class="card-text">Uztaisiet savu skapi no pieejamiem moduļiem</p>
+                </div>
+              </a>
+            </div>
+            <div class="col filterable-card">
+              <a href="12-Naktsgaldiņš-Miers-.html" class="card standout-hover undecorated" style="width: 18rem;">
+                <img src="../img/c0e238184df7d714bfc5966712b1ddeb5d5b7ff7.png" class="card-img-top" alt="...">
+                
+                <div class="card-body">
+                  <h5 class="card-title">12. Naktsgaldiņš "Miers"</h5>
+                  <p class="card-text">Vienkāršs naktsgaldiņš ar diviem plauktiem</p>
+                </div>
+              </a>
+            </div>
+            <div class="col filterable-card">
+              <a href="13-Plaukts-televizoram-Multivide-.html" class="card standout-hover undecorated" style="width: 18rem;">
+                <img src="../img/5fb990972eb8c5456cc337192edd90436fb4ed7b.png" class="card-img-top" alt="...">
+                
+                <div class="card-body">
+                  <h5 class="card-title">13. Plaukts televizoram "Multivide"</h5>
+                  <p class="card-text">Plaukts televizoram līdz 65"</p>
+                </div>
+              </a>
+            </div>
+        </div>
     </div>
 </main>
 <footer>
@@ -236,31 +256,31 @@
         <div class="container">
             <div class="row p-2">
                 <div class="col col-auto">
-                    <a class="a-hoverable" href="pages/71b9bbf67ae2c42dd8afc9bd14e6a169cbe77491.html">Par Mums</a>
+                    <a class="a-hoverable" href="71b9bbf67ae2c42dd8afc9bd14e6a169cbe77491.html">Par Mums</a>
                 </div>
                 <div class="col"></div>
                 <div class="col col-auto">
-                    <a class="a-hoverable" href="pages/c25eff276332e29b858d50e67e135979d6dde488.html">Pasūtījuma process</a>
+                    <a class="a-hoverable" href="c25eff276332e29b858d50e67e135979d6dde488.html">Pasūtījuma process</a>
                 </div>
                 <div class="col"></div>
                 <div class="col col-auto">
-                    <a class="a-hoverable" href="pages/03c1f1e311d6b7420124a4175a67f3d1a66f9ec9.html">BUJ</a>
+                    <a class="a-hoverable" href="03c1f1e311d6b7420124a4175a67f3d1a66f9ec9.html">BUJ</a>
                 </div>
                 <div class="col"></div>
                 <div class="col col-auto">
-                    <a class="a-hoverable" href="pages/1e198b574c2a2092072b7ff4deb34b7fdab2d807.html">Lietošanas noteikumi</a>
+                    <a class="a-hoverable" href="1e198b574c2a2092072b7ff4deb34b7fdab2d807.html">Lietošanas noteikumi</a>
                 </div>
                 <div class="col"></div>
                 <div class="col col-auto">
-                    <a class="a-hoverable" href="pages/9078cb9bf8dc12b0ae88f1fd2c1af0ac9584f063.html">Privātuma politika</a>
+                    <a class="a-hoverable" href="9078cb9bf8dc12b0ae88f1fd2c1af0ac9584f063.html">Privātuma politika</a>
                 </div>
                 <div class="col"></div>
                 <div class="col col-auto">
-                    <a class="a-hoverable" href="pages/403af372c02874a954c35db3cd492d09c042883a.html">Preču atgriešana</a>
+                    <a class="a-hoverable" href="403af372c02874a954c35db3cd492d09c042883a.html">Preču atgriešana</a>
                 </div>
                 <div class="col"></div>
                 <div class="col col-auto">
-                    <a class="a-hoverable" href="pages/61f9892efac9a2897e0873397622830e19526fa0.html">Sīkdatņu politika</a>
+                    <a class="a-hoverable" href="61f9892efac9a2897e0873397622830e19526fa0.html">Sīkdatņu politika</a>
                 </div>
                 <div class="col"></div>
                 <div class="col col-auto">
@@ -282,7 +302,7 @@
                         <p class="fs-5">
                             Mēs izmantojam sīkdatnes un citas tehnoloģijas, lai personalizētu Jūsu pieredzi, veiktu
                             mārketingu un apkopotu analītikas datus. Uzziniet vairāk mūsu <a
-                                href="pages/9078cb9bf8dc12b0ae88f1fd2c1af0ac9584f063.html">"Privātuma politika"</a>
+                                href="9078cb9bf8dc12b0ae88f1fd2c1af0ac9584f063.html">"Privātuma politika"</a>
                         </p>
                     </div>
                 </div>
@@ -473,4 +493,14 @@
     });
 </script>
 </body>
+<script type="module">
+    import {setupQuickFilter} from './../js/quickFilter.js';
+
+    const items = document.querySelectorAll('.filterable-card');
+
+    setupQuickFilter('#searchInputField', Array.from(items), (searchTerm, element) => {
+        const text = element.textContent.toLowerCase();
+        return searchTerm !== '' && !text.includes(searchTerm);
+    });
+</script>
 </html>

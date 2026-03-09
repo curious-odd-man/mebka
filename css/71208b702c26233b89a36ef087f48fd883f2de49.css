@@ -190,3 +190,20 @@ li.multilevel-numbering::before {
 .tool-complexity-img {
     height: 7em;
 }
+
+.landing-header {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.landing-background {
+    background:#f8f9fa;
+}
+
+.landing-section {
+    padding: 90px 0;
+}
+
+.landing-feature {
+    padding: 25px;
+}
