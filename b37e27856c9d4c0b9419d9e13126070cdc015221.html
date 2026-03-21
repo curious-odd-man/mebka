@@ -283,7 +283,7 @@
             <svg width="32px" height="32px">
                 <use xlink:href="img/559012af4c306bd42bac0e563766d5234bcb69f8.svg"/>
             </svg>
-            Nosūtīt!
+            Pārbaudīt un Sūtīt!
         </button>
     </div>
 </section>
@@ -292,22 +292,12 @@
 <!-- ========================================================================================== -->
 <section id='generated' class="back" hidden="hidden">
     <div class="display-4 container text-danger">
-        Pārbaudiet tekstu un iesūtiet to uz <a href="mailto:mebka@mebka.lv" class="a-hoverable">
-        mebka@mebka.lv
-    </a>
+        Pārbaudiet tekstu un spiediet pogu apakšā.
     </div>
     <div class="container mt-4 mb-4">
         <div class="row mb-4">
             <div class="col col-auto">
                 <span class="display-6">Ziņojuma teksts</span>
-            </div>
-            <div class="col">
-                <button id='copy-to-clipboard' class="btn btn-success  btn-lg">
-                    <svg width="32px" height="32px">
-                        <use xlink:href="img/bd4532e7d08885ce57573e63536faa472bd75116.svg"/>
-                    </svg>
-                    <span id='copy-to-clipboard-text'>Iekopēt starpliktuvē</span>
-                </button>
             </div>
         </div>
         <div class="row">
@@ -318,7 +308,22 @@
     </div>
 
     <div class="container mt-4 mb-4">
-        <button id='edit' class="btn btn-warning btn-lg">Rediģēt!</button>
+        <button id='edit' class="btn btn-warning btn-lg me-4">Rediģēt!</button>
+        <button id='submit-google-form-button' class="btn btn-success btn-lg ms-4">
+            <svg width="1.3em" height="100%" viewBox="0 0 16 16">
+                <use xlink:href="img/46f4e14743f58b64e3880eee0170de92a50cac6a.svg"/>
+            </svg>
+            Sūtīt!
+        </button>
+        <div id='submit-google-form-sent' class="btn btn-success btn-lg ms-4 visually-hidden" disabled="true">
+            <svg width="1.3em" height="100%" viewBox="0 0 16 16">
+                <use xlink:href="img/46f4e14743f58b64e3880eee0170de92a50cac6a.svg"/>
+            </svg>
+            Nosūtīts!
+            <svg width="32px" height="32px">
+                <use xlink:href="img/559012af4c306bd42bac0e563766d5234bcb69f8.svg"/>
+            </svg>
+        </div>
     </div>
 </section>
 <footer>
@@ -329,7 +334,7 @@
             </div>
             <div class="col text-end text-secondary">
                 Lapa atjaunota:
-                <time>2026-03-04</time>
+                <time>2026-03-21</time>
             </div>
         </div>
     </div>

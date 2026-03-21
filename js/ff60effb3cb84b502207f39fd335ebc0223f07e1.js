@@ -19,8 +19,6 @@ export function setupOrder(itemData) {
     buttonShowSection('delivery-button', 'delivery-section', "Lūdzu piegādi uz");
     setupAddressAutocomplete();
     doneAndEditButtons(currentItem, termsOfUseCheckbox);
-    setupCopyToClipboard();
-    setupMailtoLink(currentItem);
     const contactInfoSection = document.getElementById('contact-info-section');
     const contactInputs = contactInfoSection?.querySelectorAll('input');
     contactInputs.forEach(ci => {
@@ -164,6 +162,14 @@ function createInputGroup(label) {
     return div;
 }
 function doneAndEditButtons(currentItem, termsOfUseCheckbox) {
+    const submitGoogleFormButton = document.getElementById("submit-google-form-button");
+    const submittedGoogleFormDiv = document.getElementById('submit-google-form-sent');
+    submitGoogleFormButton.addEventListener("click", _ => {
+        submitToGoogleForms();
+        submittedGoogleFormDiv.classList.remove('visually-hidden');
+        submitGoogleFormButton.classList.add('visually-hidden');
+        submitGoogleFormButton.disabled = true;
+    });
     const readyButton = document.getElementById('ready');
     readyButton.addEventListener('click', () => {
         if (termsOfUseCheckbox.checked) {
@@ -176,37 +182,10 @@ function doneAndEditButtons(currentItem, termsOfUseCheckbox) {
     });
     const editButton = document.getElementById('edit');
     editButton.addEventListener('click', () => {
+        submittedGoogleFormDiv.classList.add('visually-hidden');
+        submitGoogleFormButton.classList.remove('visually-hidden');
         switchSection();
-    });
-}
-function setupCopyToClipboard() {
-    const copyToClipboardButton = document.getElementById('copy-to-clipboard');
-    copyToClipboardButton.addEventListener('click', () => {
-        const messageContentsSection = document.getElementById('mail-contents');
-        const text = messageContentsSection.innerText;
-        navigator
-            .clipboard
-            .writeText(text)
-            .then(() => {
-            const buttonTextElement = document.getElementById("copy-to-clipboard-text");
-            const originalText = buttonTextElement.innerText;
-            buttonTextElement.innerText = 'Iekopēts!';
-            setTimeout(() => {
-                buttonTextElement.innerText = originalText;
-            }, 2000);
-        });
-    });
-}
-function setupMailtoLink(currentItem) {
-    const mailtoLink = document.getElementById('mailto-link');
-    mailtoLink
-        .addEventListener('click', e => {
-        e.preventDefault();
-        const recipient = mailtoLink.innerText;
-        const subject = 'Pasūtījums ' + currentItem.name;
-        const messageContentsSection = document.getElementById('mail-contents');
-        const body = messageContentsSection.innerText;
-        window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        submitGoogleFormButton.disabled = false;
     });
 }
 function fillItemStaticContents(currentItem) {
@@ -289,6 +268,19 @@ function getCurrentItem(itemData) {
     const searchParams = new URLSearchParams(paramsString);
     const itemId = searchParams.get('itemId');
     return itemData.find(it => it.index === itemId);
+}
+function submitToGoogleForms() {
+    const baseUrl = "https://docs.google.com/forms/d/e/1FAIpQLSeSIcpEBfyEelDYCm-KmeFKrzoZ-6FBGqJ2_RKwMfTOlHf-Og/formResponse";
+    const messageContentsSection = document.getElementById('mail-contents');
+    const params = new URLSearchParams({
+        "entry.1586339267": messageContentsSection.innerText
+    });
+    // Submit silently via hidden iframe
+    const iframe = document.createElement("iframe");
+    iframe.style.display = "none";
+    iframe.src = `${baseUrl}?${params.toString()}`;
+    document.body.appendChild(iframe);
+    setTimeout(() => iframe.remove(), 3000);
 }
 function createMaterialTableRow(material, table, isUserAddedRow, factorySelect) {
     const existingTableRows = [...table.rows];
