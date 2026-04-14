@@ -169,6 +169,10 @@ function doneAndEditButtons(currentItem, termsOfUseCheckbox) {
         submittedGoogleFormDiv.classList.remove('visually-hidden');
         submitGoogleFormButton.classList.add('visually-hidden');
         submitGoogleFormButton.disabled = true;
+        gtag("event", "button_click", {
+            event_category: "order",
+            event_label: "submit_button",
+        });
     });
     const readyButton = document.getElementById('ready');
     readyButton.addEventListener('click', () => {
@@ -179,6 +183,10 @@ function doneAndEditButtons(currentItem, termsOfUseCheckbox) {
         else {
             termsOfUseCheckbox.classList.add('is-invalid');
         }
+        gtag("event", "button_click", {
+            event_category: "order",
+            event_label: "ready_button",
+        });
     });
     const editButton = document.getElementById('edit');
     editButton.addEventListener('click', () => {
@@ -186,6 +194,10 @@ function doneAndEditButtons(currentItem, termsOfUseCheckbox) {
         submitGoogleFormButton.classList.remove('visually-hidden');
         switchSection();
         submitGoogleFormButton.disabled = false;
+        gtag("event", "button_click", {
+            event_category: "order",
+            event_label: "edit_button",
+        });
     });
 }
 function fillItemStaticContents(currentItem) {
