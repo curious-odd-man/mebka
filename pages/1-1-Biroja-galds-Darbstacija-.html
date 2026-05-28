@@ -9,19 +9,7 @@
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="../css/71208b702c26233b89a36ef087f48fd883f2de49.css" rel="stylesheet">
     <link href="../css/f1da6ba7d8b91526c26a00212cb12c00a0ac8287.css" rel="stylesheet">
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('consent', 'default', {
-            'ad_user_data': 'denied',
-            'ad_personalization': 'denied',
-            'ad_storage': 'denied',
-            'analytics_storage': 'denied',
-            'wait_for_update': 500,
-        });
-        gtag('js', new Date());
-        gtag('config', 'G-34FBY4QDE6');
-    </script>
+    <script type="module" src="../js/1c8d7b4f2573cf21945067b683787347b089e4a4.js"></script>
 </head>
 <body class="back-gradient">
 <header class="sticky-top">
@@ -716,7 +704,7 @@
             </div>
             <div class="col text-end text-secondary">
                 Lapa atjaunota:
-                <time>2026-05-25</time>
+                <time>2026-05-28</time>
             </div>
         </div>
     </div>
@@ -958,89 +946,7 @@
         </div>
     </div>
 </section>
-<script>
-    class ConsentConfig {
-        constructor(ad_user_data, ad_personalization, ad_storage, analytics_storage, personalization) {
-            this.ad_user_data = ad_user_data;
-            this.ad_personalization = ad_personalization;
-            this.ad_storage = ad_storage;
-            this.analytics_storage = analytics_storage;
-            this.personalization = personalization;
-        }
-    }
-
-    function setupConsent(consentConfig) {
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        localStorage.setItem(CONSENT_STORAGE_KEY, JSON.stringify(consentConfig));
-        console.log("Setting Cookies: " + JSON.stringify(consentConfig))
-
-        gtag('consent', 'update', {
-            ad_user_data: consentConfig.ad_user_data || 'denied',
-            ad_personalization: consentConfig.ad_personalization || 'denied',
-            ad_storage: consentConfig.ad_storage || 'denied',
-            analytics_storage: consentConfig.analytics_storage || 'denied'
-        });
-
-        const gtagScript = document.createElement('script');
-        gtagScript.async = true;
-        gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-34FBY4QDE6';
-
-        const firstScript = document.getElementsByTagName('script')[0];
-        firstScript.parentNode.insertBefore(gtagScript, firstScript);
-
-        document.getElementById('cookies-consent-analytics-checkbox').checked = consentConfig.analytics_storage === 'granted';
-        document.getElementById('cookies-consent-marketing-checkbox').checked = consentConfig.ad_storage === 'granted';
-        document.getElementById('cookies-consent-marketing-user-data-checkbox').checked = consentConfig.ad_user_data === 'granted';
-        document.getElementById('cookies-consent-marketing-personalization-checkbox').checked = consentConfig.ad_personalization === 'granted';
-        document.getElementById("cookies-consent-personalization-checkbox").checked = consentConfig.personalization === 'granted';
-    }
-
-    const CONSENT_STORAGE_KEY = "consentSet";
-    const consentConfigString = localStorage.getItem(CONSENT_STORAGE_KEY);
-    const consentPopupClassList = document.getElementById("gtag-cookies-consent-offcanvas").classList;
-
-    if (consentConfigString) {
-        setupConsent(JSON.parse(consentConfigString));
-    } else {
-        consentPopupClassList.add("show");
-    }
-
-    document.getElementById('accept-all-cookies-button').addEventListener('click', event => {
-        const consentConfigGranted = new ConsentConfig('granted', 'granted', 'granted', 'granted', 'granted');
-        setupConsent(consentConfigGranted);
-    });
-
-    document.getElementById('deny-all-cookies-button').addEventListener('click', event => {
-        const consentConfigDenied = new ConsentConfig('denied', 'denied', 'denied', 'denied', 'denied');
-        setupConsent(consentConfigDenied);
-    });
-
-    document.getElementById('configure-cookies-button').addEventListener('click', event => {
-        const container = document.getElementById('offcanvas-body-container');
-        for (let child of container.children) {
-            child.classList.remove("visually-hidden");
-        }
-    });
-
-    document.getElementById('save-user-preferences').addEventListener('click', event => {
-        const personalization = document.getElementById("cookies-consent-personalization-checkbox").checked;
-        const analytics = document.getElementById('cookies-consent-analytics-checkbox').checked;
-        const marketing = document.getElementById('cookies-consent-marketing-checkbox').checked;
-        const marketingUserData = document.getElementById('cookies-consent-marketing-user-data-checkbox').checked;
-        const marketingPersonalization = document.getElementById('cookies-consent-marketing-personalization-checkbox').checked;
-        const consentConfigUser = new ConsentConfig(
-                marketingUserData ? 'granted' : 'denied',
-                marketingPersonalization ? 'granted' : 'denied',
-                marketing ? 'granted' : 'denied',
-                analytics ? 'granted' : 'denied',
-                personalization ? 'granted' : 'denied'
-        );
-        setupConsent(consentConfigUser);
-    });
-</script>
+<script src="../js/497a9e103ad769c41bdb6f57ca352b665323e303.js" type="module"></script>
 </body>
 <script>
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
