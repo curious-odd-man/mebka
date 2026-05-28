@@ -1,4 +1,8 @@
 import { qs } from "./614a054d67c54ec6077ce6a0f5bf0ef2d7465233.js";
+window.dataLayer = window.dataLayer || [];
+window.gtag = window.gtag || function (...args) {
+    window.dataLayer.push(args);
+};
 class ConsentConfig {
     ad_user_data;
     ad_personalization;
@@ -14,23 +18,14 @@ class ConsentConfig {
     }
 }
 const CONSENT_STORAGE_KEY = 'consentSet';
-window.dataLayer = window.dataLayer || [];
-function gtag(...args) {
-    window.dataLayer.push(args);
-}
 function setupConsent(consentConfig) {
     localStorage.setItem(CONSENT_STORAGE_KEY, JSON.stringify(consentConfig));
-    gtag('consent', 'update', {
+    window.gtag('consent', 'update', {
         ad_user_data: consentConfig.ad_user_data || 'denied',
         ad_personalization: consentConfig.ad_personalization || 'denied',
         ad_storage: consentConfig.ad_storage || 'denied',
         analytics_storage: consentConfig.analytics_storage || 'denied'
     });
-    const gtagScript = document.createElement('script');
-    gtagScript.async = true;
-    gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-34FBY4QDE6';
-    const firstScript = document.getElementsByTagName('script')[0];
-    firstScript.parentNode?.insertBefore(gtagScript, firstScript);
     qs('#cookies-consent-analytics-checkbox').checked = consentConfig.analytics_storage === 'granted';
     qs('#cookies-consent-marketing-checkbox').checked = consentConfig.ad_storage === 'granted';
     qs('#cookies-consent-marketing-user-data-checkbox').checked = consentConfig.ad_user_data === 'granted';
