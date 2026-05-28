@@ -195,6 +195,7 @@ header.sticky-top {
     gap: 0;
     margin-bottom: 0;
     padding: 0;
+    align-items: baseline;
 }
 
 .breadcrumb-item a {
@@ -629,6 +630,11 @@ button.btn-outline-light.standout-hover:hover {
     font-size: clamp(1.2rem, 2vw, 1.5rem);
     font-family: var(--font-body);
     color: var(--c-info) !important;
+}
+
+.display-6a {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-family: var(--font-body);
 }
 
 /* Badges */
@@ -1095,4 +1101,51 @@ main .container > h1:first-child {
         width: 3rem;
         height: 3rem;
     }
+}
+
+.promo-icon {
+    display: inline-block;
+}
+
+.promo-icon svg {
+    display: block;
+    transition:
+            transform var(--transition-fast),
+            filter var(--transition-fast);
+}
+
+.promo-icon:hover svg,
+.promo-icon:focus svg {
+    transform: translateY(-1px);
+    filter: drop-shadow(0 8px 24px rgba(200, 131, 58, 0.35));
+}
+
+.promo-icon:active svg {
+    transform: translateY(0);
+    filter: none;
+}
+
+.promo-icon svg {
+    display: block;
+}
+
+.breadcrumbs-mobile {
+    width: 100%;
+    white-space: nowrap;
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+    .breadcrumbs-mobile {
+        width: auto;
+        margin-top: 0 !important;
+    }
+}
+
+.order-dimensions-img {
+    max-width: 100%;
+}
+
+#gtag-cookies-consent-section {
+    position: unset;
 }

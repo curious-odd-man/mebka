@@ -28,21 +28,19 @@
 <body class="back-gradient">
 <header class="sticky-top">
     <div class="grey-background navbar navbar-expand-lg bd-navbar">
-        <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap">
-            <a class="navbar-brand" href="index.html">
+        <nav class="container-xxl d-flex flex-wrap align-items-center">
+            <a class="order-0 navbar-brand" href="index.html">
                 <img src="img/50eddd400c36b5f6750b13c08bf8a2e0cb865444.svg" alt="MebKa logo" width="100" height="100%">
             </a>
-            <ol class="breadcrumb navbar-nav me-auto mb-2 mb-lg-0 text-center">
+            <ol class="breadcrumb breadcrumbs-mobile mt-2 mb-0 me-auto flex-nowrap overflow-auto order-last order-lg-1 text-center">
                 
             </ol>
-            <div class="ms-auto mb-2 me-auto mb-lg-0 text-center">
-                <a href="pages/77f9e615d67b37c18aa7808ae8fbc500e78230c2.html">
-                    <svg width="15em" height="100%" viewBox="0 0 440 115">
-                        <use xlink:href="img/c46a29b96aaae45e475d256bc63ef3b964db96cb.svg"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="ms-auto mb-2 mb-lg-0 text-center">
+            <a href="pages/77f9e615d67b37c18aa7808ae8fbc500e78230c2.html" class="promo-icon me-3 ms-3 order-4">
+                <svg width="8.5em" height="100%" viewBox="0 0 179 72">
+                    <use xlink:href="img/c46a29b96aaae45e475d256bc63ef3b964db96cb.svg"/>
+                </svg>
+            </a>
+            <div class="text-center order-5">
                 <div class="text-secondary pb-1">
                     <svg width="1.3em" height="100%" viewBox="0 0 16 16">
                         <use xlink:href="img/393ca559c20292fc9bbb7469492b6c53ebaf75c8.svg"/>
@@ -66,138 +64,199 @@
 <!-- ========================================================================================== -->
 <!-- ============================= Questionary ================================================ -->
 <!-- ========================================================================================== -->
-<section id='questionary' class="back">
-    <div class="container display-5 mt-4 mb-4">
-        Pasūtījuma sagatavošana: <span id='item-name-span' class="text-primary"></span>
-    </div>
-    <div class="container mt-4 mb-4">
-        <img id="dimensions-img">
-    </div>
-    <div class="container display-5 mt-4 mb-4">
-        Kādu izmēru Jūs vēlaties?
-        <div class="row mt-2 mb-2">
-            <div class="col">
-                <select id='dimensions-select' class="form-select" aria-label="Izvēlēties izmēru">
-                </select>
-            </div>
-        </div>
-        <div id="custom-dimensions-section-row" class="row mt-2 mb-2" hidden="hidden">
-            <div id='custom-dimensions-section-col' class="col">
-                <span class="display-6 mb-3">Ievadiet jūsu izmērus</span>
-            </div>
+<section id='questionary' class="back container d-grid gap-2">
+    <div class="row-gap-2 display-5">
+        <div class="col">
+            Pasūtījuma sagatavošana: <span id='item-name-span' class="text-primary"></span>
         </div>
     </div>
-    <div class="container mt-4 mb-4">
-        <span class="display-5">Kādi materiāli tiks izmantoti?</span>
-        <div class="row mt-2">
-            <span class="fs-5">Izvēlējieties detaļu ražotāju no saraksta, vai norādiet savu.</span>
-            <div class="input-group mb-2">
-                <span class="input-group-text">Ražotājs</span>
-                <select id="factory-select" class="form-select">
-                    <option selected></option>
-                    <option value="attelsr">AttelsR</option>
-                    <option value="amf">AM Furnitūra</option>
-                    <option value="custom">Cits</option>
-                </select>
-            </div>
-            <div id="factory-custom-input-section" class="input-group mb-2" hidden="hidden">
-                <span class="input-group-text">Informācija par ražotāju: </span>
-                <input id="factory-custom-input" class="form-control">
-            </div>
+    <div class="row-gap-2">
+        <div class="col">
+            <img class="order-dimensions-img" id="dimensions-img">
         </div>
-        <div class="row mt-2">
-            <template id="template-additional-question-checkbox">
-                <div class="mt-2 border-top border-bottom border-secondary-subtle">
-                    <div class="mt-2 form-check form-switch">
-                        <input class="form-check-input" type="checkbox" role="switch" id="checkbox">
-                        <label class="form-check-label" for="checkbox" id="checkbox-label"></label>
-                    </div>
-                    <div id="elaboration" class="font-085 mb-2"></div>
-                </div>
-            </template>
-        </div>
-        <div class="row mt-2">
-            <span class="fs-5">Norādiet materiālus</span>
-            <p>
-                Šeit norādiet no kādiem materiāliem Jūs vēlaties izgatavot mēbeles.
-            </p>
-            <ol>
-                <li>Norādiet materiāla ražotāja kodu (artikulu)</li>
-                <li>Norādiet kādam detaļām šis materiāls ir jāizmanto</li>
-                <li>Varat norādīt vairākus dažādus materiālus, pievienojot jaunas rindas</li>
-            </ol>
+    </div>
+    <div class="row-gap-2 display-5">
+        <div class="col">
+            Kādu izmēru Jūs vēlaties?
 
-            <div class="col" id="materials-section">
-                <table id='materials-table' class="table table-bordered table-responsive">
-                    <thead>
-                    <tr class="text-center">
-                        <th scope="col">#</th>
-                        <th scope="col">Materiāla artikuls</th>
-                        <th scope="col">Materiāla biezums</th>
-                        <th scope="col">Detaļu apraksts</th>
-                        <th scope="col">
-                            <svg width="32px" height="32px">
-                                <use xlink:href="img/d8bbf81cb46fa8277eaa25fbd6607f7649b0549c.svg"/>
-                            </svg>
-                        </th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
-                <template id="template-delete-material-row">
-                    <button class="btn text-danger">
-                        <svg width="32px" height="32px">
-                            <use xlink:href="img/6e6a522562ef429ed195362569cc211dc01e41b6.svg"/>
-                        </svg>
+            <!-- DESKTOP -->
+            <div class="row mt-2 mb-2 d-none d-md-flex">
+                <div class="col">
+                    <select id="dimensions-select-desktop"
+                            class="form-select"
+                            aria-label="Izvēlēties izmēru">
+                    </select>
+                </div>
+            </div>
+
+            <!-- MOBILE -->
+            <div class="row mt-2 mb-2 d-md-none">
+                <div class="col">
+                    <button id="mobile-dimensions-trigger"
+                            class="btn btn-outline-secondary w-100 text-start"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#dimensionsOffcanvas">
+                        Izvēlieties izmēru
                     </button>
-                </template>
-                <template id="template-material-row">
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>
-                            <input type="text" class="form-control" name="material-id">
-                        </td>
-                        <td>
-                            <input class="form-control" disabled>
-                        </td>
-                        <td>
-                            <input type="text" class="form-control" name="description">
-                        </td>
-                        <td></td>
-                    </tr>
+                </div>
+            </div>
+
+            <!-- OFFCANVAS -->
+            <div id="dimensionsOffcanvas"
+                 class="offcanvas offcanvas-bottom h-75"
+                 tabindex="-1">
+
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">
+                        Izvēlieties izmēru
+                    </h5>
+
+                    <button type="button"
+                            class="btn-close"
+                            data-bs-dismiss="offcanvas">
+                    </button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <template id="offcanvas-option-template">
+                        <button class="list-group-item list-group-item-action rounded-4 shadow"
+                                data-bs-dismiss="offcanvas">
+                        </button>
+                    </template>
+                    <div class="list-group gap-3" id="dimensions-mobile-list">
+                    </div>
+                </div>
+            </div>
+
+            <!-- CUSTOM DIMENSIONS -->
+            <div id="custom-dimensions-section-row" class="row mt-2 mb-2" hidden="hidden">
+                <div id='custom-dimensions-section-col' class="col">
+            <span class="display-6 mb-3">
+                Ievadiet jūsu izmērus
+            </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row-gap-2">
+        <div class="col d-grid gap-2">
+            <span class="display-5">Kādi materiāli tiks izmantoti?</span>
+            <div class="row">
+                <span class="fs-5">Izvēlējieties detaļu ražotāju no saraksta, vai norādiet savu.</span>
+                <div class="input-group">
+                    <span class="input-group-text">Ražotājs</span>
+                    <select id="factory-select" class="form-select">
+                        <option selected></option>
+                        <option value="attelsr">AttelsR</option>
+                        <option value="amf">AM Furnitūra</option>
+                        <option value="custom">Cits</option>
+                    </select>
+                </div>
+                <div id="factory-custom-input-section" class="input-group" hidden="hidden">
+                    <span class="input-group-text">Informācija par ražotāju: </span>
+                    <input id="factory-custom-input" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <template id="template-additional-question-checkbox">
+                    <div class=" border-top border-bottom border-secondary-subtle">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="checkbox">
+                            <label class="form-check-label" for="checkbox" id="checkbox-label"></label>
+                        </div>
+                        <div id="elaboration" class="font-085 mb-2"></div>
+                    </div>
                 </template>
             </div>
-            <button id='add-material-button' class="btn btn-success">
+            <div class="row">
+                <div class="col d-grid gap-2">
+                    <span class="fs-5">Norādiet materiālus</span>
+                    <p>
+                        Šeit norādiet no kādiem materiāliem Jūs vēlaties izgatavot mēbeles.
+                    </p>
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item ps-5">Norādiet materiāla ražotāja kodu (artikulu)</li>
+                        <li class="list-group-item ps-5">Norādiet kādam detaļām šis materiāls ir jāizmanto</li>
+                        <li class="list-group-item ps-5">Varat norādīt vairākus dažādus materiālus, pievienojot
+                            jaunas rindas
+                        </li>
+                    </ol>
+
+                    <div id="materials-section">
+                        <table id='materials-table' class="table table-bordered table-responsive">
+                            <thead>
+                            <tr class="text-center">
+                                <th scope="col">#</th>
+                                <th scope="col">Materiāla artikuls</th>
+                                <th scope="col">Materiāla biezums</th>
+                                <th scope="col">Detaļu apraksts</th>
+                                <th scope="col">
+                                    <svg width="32px" height="32px">
+                                        <use xlink:href="img/d8bbf81cb46fa8277eaa25fbd6607f7649b0549c.svg"/>
+                                    </svg>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                        <template id="template-delete-material-row">
+                            <button class="btn text-danger">
+                                <svg width="32px" height="32px">
+                                    <use xlink:href="img/6e6a522562ef429ed195362569cc211dc01e41b6.svg"/>
+                                </svg>
+                            </button>
+                        </template>
+                        <template id="template-material-row">
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>
+                                    <input type="text" class="form-control" name="material-id">
+                                </td>
+                                <td>
+                                    <input class="form-control" disabled>
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="description">
+                                </td>
+                                <td></td>
+                            </tr>
+                        </template>
+                    </div>
+                    <button id='add-material-button' class="btn btn-success w-100">
+                        <svg width="32px" height="32px">
+                            <use xlink:href="img/8dc08d26e17b369fe26f2e89f67062d2f88cdccc.svg"/>
+                        </svg>
+                        Pievienot materiālu
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row-gap-2">
+        <div class="col">
+            <button id="additional-changes-button" class="btn btn-primary">
                 <svg width="32px" height="32px">
-                    <use xlink:href="img/8dc08d26e17b369fe26f2e89f67062d2f88cdccc.svg"/>
+                    <use xlink:href="img/67e7e75d4ebeedf5e510a915cd70856339b8a708.svg"/>
                 </svg>
-                Pievienot materiālu
+                Vēlos papildus izmaiņas!
             </button>
-        </div>
-    </div>
-    <div class="container mt-4 mb-4">
-        <button id="additional-changes-button" class="btn btn-primary btn-lg">
-            <svg width="32px" height="32px">
-                <use xlink:href="img/67e7e75d4ebeedf5e510a915cd70856339b8a708.svg"/>
-            </svg>
-            Vēlos papildus izmaiņas!
-        </button>
-        <div id='additional-changes-section' hidden="hidden">
-            <div class="row">
-                <div class="col">
-                    <span class="display-6">Ievadiet papildus izmaiņas, ko Jūs vēlaties!</span>
+            <div id='additional-changes-section' hidden="hidden">
+                <div class="row">
+                    <div class="col">
+                        <span class="display-6a">Ievadiet papildus izmaiņas, ko Jūs vēlaties!</span>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <textarea id='additional-changes-textarea' class="form-control"></textarea>
+                <div class="row">
+                    <div class="col">
+                        <textarea id='additional-changes-textarea' class="form-control"></textarea>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container mt-4 mb-4">
-        <button id="additional-comments-button" class="btn btn-primary  btn-lg">
+    <div class="row-gap-2">
+        <button id="additional-comments-button" class="btn btn-primary">
             <svg width="32px" height="32px">
                 <use xlink:href="img/49779046010d58031c5e3dbcce4389c4d073af9f.svg"/>
             </svg>
@@ -206,7 +265,7 @@
         <div id='additional-comments-section' hidden="hidden">
             <div class="row">
                 <div class="col">
-                    <span class="display-6">Ievadiet papildus komentārus...</span>
+                    <span class="display-6a">Ievadiet papildus komentārus...</span>
                 </div>
             </div>
             <div class="row">
@@ -216,9 +275,9 @@
             </div>
         </div>
     </div>
-    <div id='contact-info-section' class="container mt-4 mb-4">
+    <div id='contact-info-section' class="row-gap-2">
         <div class="mb-3">
-            <span class="display-6">Saziņas dati</span>
+            <span class="display-5">Saziņas dati</span>
         </div>
         <div class="input-group mb-3">
             <span id='person-name-input-label' class="input-group-text">Vārds, Uzvārds</span>
@@ -235,7 +294,7 @@
             <input id='contact-email' type="text" aria-labelledby="contact-email-label" class="form-control">
         </div>
     </div>
-    <div class="container mt-4 mb-4">
+    <div class="row-gap-2">
         <button id="delivery-button" class="btn btn-primary  btn-lg">
             <svg width="32px" height="32px">
                 <use xlink:href="img/07dac46bb46ded55b2fd02ecc6a3ac9b852e0aa2.svg"/>
@@ -262,18 +321,19 @@
             </div>
         </div>
     </div>
-
-    <div class="container mb-2">
+    <div class="row-gap-2">
         <div class="row">
             <div class="col bg-warning-subtle rounded-3 pt-2 pb-2 mb-2">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="termsOfUseAcceptedCheckbox">
                     <label class="form-check-label" for="termsOfUseAcceptedCheckbox">
-                        Iepazinos un piekrītu <a href="pages/1e198b574c2a2092072b7ff4deb34b7fdab2d807.html" target="_blank">lietošanas noteikumiem</a> un <a href="pages/9078cb9bf8dc12b0ae88f1fd2c1af0ac9584f063.html" target="_blank">privātuma
+                        Iepazinos un piekrītu <a href="pages/1e198b574c2a2092072b7ff4deb34b7fdab2d807.html" target="_blank">lietošanas
+                        noteikumiem</a> un <a href="pages/9078cb9bf8dc12b0ae88f1fd2c1af0ac9584f063.html" target="_blank">privātuma
                         politikai</a>
                     </label>
                     <div class="invalid-feedback">
-                        Lūdzam izlasīt <a href="pages/1e198b574c2a2092072b7ff4deb34b7fdab2d807.html" target="_blank">lietošanas noteikumus</a> un <a href="pages/9078cb9bf8dc12b0ae88f1fd2c1af0ac9584f063.html" target="_blank">privātuma
+                        Lūdzam izlasīt <a href="pages/1e198b574c2a2092072b7ff4deb34b7fdab2d807.html" target="_blank">lietošanas noteikumus</a> un <a
+                            href="pages/9078cb9bf8dc12b0ae88f1fd2c1af0ac9584f063.html" target="_blank">privātuma
                         politiku</a> un pieņemt tos atzimējot ķeksīti augšā.
                     </div>
                 </div>
@@ -335,7 +395,7 @@
             </div>
             <div class="col text-end text-secondary">
                 Lapa atjaunota:
-                <time>2026-05-20</time>
+                <time>2026-05-28</time>
             </div>
         </div>
     </div>

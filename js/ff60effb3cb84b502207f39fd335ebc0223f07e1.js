@@ -1,4 +1,5 @@
 import { setupAddressAutocomplete } from "./f074c70953701d6e657717e5e87c7d17feccc3de.js";
+import { qs, qsAll } from "./614a054d67c54ec6077ce6a0f5bf0ef2d7465233.js";
 const FIELDS = [];
 // @ts-ignore
 export function setupOrder(itemData) {
@@ -118,13 +119,19 @@ function buttonShowSection(id, hiddenId, fieldText) {
     });
 }
 function switchSection() {
-    const questionarySection = document.getElementById('questionary');
-    const generatedSection = document.getElementById('generated');
+    const questionarySection = qs('#questionary');
+    const generatedSection = qs('#generated');
     questionarySection.hidden = !questionarySection.hidden;
+    if (questionarySection.hidden) {
+        questionarySection.classList.remove('d-grid');
+    }
+    else {
+        questionarySection.classList.add('d-grid');
+    }
     generatedSection.hidden = !generatedSection.hidden;
 }
 function getDimensionsFromInputs(customDimensionsInputs) {
-    return [...customDimensionsInputs]
+    return customDimensionsInputs
         .map(it => {
         return it.ariaLabel + '=' + it.value;
     })
@@ -142,12 +149,6 @@ function generateMessage(currentItem) {
     }
     messageContentsSection.innerHTML = messageLines.join('<br>');
 }
-function addOption(select, value, text) {
-    const option = document.createElement('option');
-    option.value = value;
-    option.text = text;
-    select.appendChild(option);
-}
 function createInputGroup(label) {
     const div = document.createElement('div');
     div.classList.add("input-group", "mb-3");
@@ -162,8 +163,8 @@ function createInputGroup(label) {
     return div;
 }
 function doneAndEditButtons(currentItem, termsOfUseCheckbox) {
-    const submitGoogleFormButton = document.getElementById("submit-google-form-button");
-    const submittedGoogleFormDiv = document.getElementById('submit-google-form-sent');
+    const submitGoogleFormButton = qs("#submit-google-form-button");
+    const submittedGoogleFormDiv = qs('#submit-google-form-sent');
     submitGoogleFormButton.addEventListener("click", _ => {
         submitToGoogleForms();
         submittedGoogleFormDiv.classList.remove('visually-hidden');
@@ -174,7 +175,7 @@ function doneAndEditButtons(currentItem, termsOfUseCheckbox) {
             event_label: "submit_button",
         });
     });
-    const readyButton = document.getElementById('ready');
+    const readyButton = qs('#ready');
     readyButton.addEventListener('click', () => {
         if (termsOfUseCheckbox.checked) {
             switchSection();
@@ -188,7 +189,7 @@ function doneAndEditButtons(currentItem, termsOfUseCheckbox) {
             event_label: "ready_button",
         });
     });
-    const editButton = document.getElementById('edit');
+    const editButton = qs('#edit');
     editButton.addEventListener('click', () => {
         submittedGoogleFormDiv.classList.add('visually-hidden');
         submitGoogleFormButton.classList.remove('visually-hidden');
@@ -206,27 +207,56 @@ function fillItemStaticContents(currentItem) {
     const dimensionsImg = document.getElementById('dimensions-img');
     dimensionsImg.src = currentItem.imgPath;
 }
+function addOption(select, value, innerHtml) {
+    const option = document.createElement('option');
+    option.value = value;
+    option.innerHTML = innerHtml;
+    select.appendChild(option);
+}
+function addOptionButton(template, mobileList, value, innerHtml, handleDimensionSelect) {
+    const clone = template.content.cloneNode(true);
+    const button = qs('button', clone);
+    button.innerHTML = innerHtml;
+    button.addEventListener("click", () => {
+        handleDimensionSelect(value, innerHtml);
+    });
+    mobileList.appendChild(button);
+}
 function setupDimensions(currentItem) {
-    const dimensionsSelector = document.getElementById('dimensions-select');
-    currentItem.dimensions.forEach(dim => {
+    const customDimensionsValue = "custom";
+    const desktopSelect = qs("#dimensions-select-desktop");
+    const mobileList = qs("#dimensions-mobile-list");
+    const mobileTrigger = qs("#mobile-dimensions-trigger");
+    const customDimensionsSection = qs('#custom-dimensions-section-row');
+    const customDimensionsSectionCol = qs('#custom-dimensions-section-col');
+    const offcanvasButtonTemplate = qs('#offcanvas-option-template');
+    function handleDimensionSelect(value, text) {
+        mobileTrigger.innerHTML = text;
+        desktopSelect.value = value;
+        customDimensionsSection.hidden = value !== customDimensionsValue;
+    }
+    currentItem.dimensions.forEach(dimension => {
         const dimTextParts = [];
-        for (const [i, value] of dim.split(',').entries()) {
-            dimTextParts.push(`${currentItem.dimensionsNames[i]}=${value} (${currentItem.dimensionsUnits})`);
+        for (const [i, value] of dimension.split(',').entries()) {
+            dimTextParts.push(`${currentItem.dimensionsNames[i]}=${value} ${currentItem.dimensionsUnits}`);
         }
         const dimText = dimTextParts.join('; ');
-        addOption(dimensionsSelector, dimText, dimText);
+        // desktop select
+        addOption(desktopSelect, dimText, dimText);
+        // mobile offcanvas item
+        addOptionButton(offcanvasButtonTemplate, mobileList, dimText, dimText, handleDimensionSelect);
     });
-    addOption(dimensionsSelector, "custom", "Savs izmērs");
-    const customDimensionsSectionCol = document.getElementById('custom-dimensions-section-col');
+    addOption(desktopSelect, customDimensionsValue, "Savs izmērs");
+    addOptionButton(offcanvasButtonTemplate, mobileList, customDimensionsValue, "Savs izmērs", handleDimensionSelect);
+    desktopSelect.addEventListener("change", e => {
+        const el = e.target;
+        handleDimensionSelect(el.value, el.textContent);
+    });
     currentItem.dimensionsNames.forEach(dimName => {
         const groupDiv = createInputGroup(dimName);
         customDimensionsSectionCol.appendChild(groupDiv);
     });
-    const customDimensionsSection = document.getElementById('custom-dimensions-section-row');
-    const customDimensionsInputs = customDimensionsSection.querySelectorAll('input');
-    dimensionsSelector.addEventListener('change', () => {
-        customDimensionsSection.hidden = dimensionsSelector.value !== 'custom';
-    });
+    const customDimensionsInputs = qsAll('input', customDimensionsSection);
     customDimensionsInputs.forEach(input => {
         input.addEventListener('input', () => {
             validateNotEmpty(input);
@@ -234,9 +264,9 @@ function setupDimensions(currentItem) {
         validateNotEmpty(input);
     });
     FIELDS.push(messageLines => {
-        const dimensions = dimensionsSelector.value === 'custom'
-            ? getDimensionsFromInputs(customDimensionsInputs)
-            : dimensionsSelector.value;
+        const dimensions = customDimensionsSectionCol.hidden
+            ? desktopSelect.value
+            : getDimensionsFromInputs(customDimensionsInputs);
         messageLines.push(`Ar dimensijam:`, `<p class="text-primary">${dimensions}</p>`);
     });
 }
@@ -244,8 +274,7 @@ function setupFactorySection(currentItem) {
     const factorySelect = document.getElementById('factory-select');
     const factoryCustomEntrySection = document.getElementById('factory-custom-input-section');
     factorySelect.addEventListener('change', () => {
-        const isPredefined = factorySelect.selectedOptions[0].value !== 'custom';
-        factoryCustomEntrySection.hidden = isPredefined;
+        factoryCustomEntrySection.hidden = factorySelect.selectedOptions[0].value !== 'custom';
     });
     const factoryCustomInput = document.getElementById('factory-custom-input');
     factoryCustomInput.addEventListener('input', () => {
